@@ -1,0 +1,107 @@
+
+
+.NavbarMainDiv{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.NavLinks{
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 8px;
+    /* border: 2px solid red; */
+    width: 65%;
+}
+.NavLinks a {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: sans-serif; 
+    line-height: 26px;
+    /* border: 2px solid yellow; */
+    /* height: 100%; */
+}
+
+.NavLinks a:hover{
+    text-decoration: none;
+     border-bottom: 3px solid red;
+}
+
+.NavLinks_btn1{
+    background-color: rgb(230, 240, 251);
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 20px;
+    padding: 0px 12px;
+    text-align: center;
+    display: block;
+    color: rgb(46, 148, 244);
+}
+
+.NavLinks_btn2{
+    background-color: rgb(255, 191, 0);
+    color: black;
+    font-weight: bold;
+    font-size: 13px;
+    border-radius: 20px;
+    padding: 0px 15px 2px 15px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.SearchIcondiv{
+    margin-right: 2%;
+}
+
+.searchModal{
+    display: flex;
+    margin-top: 35px;
+}
+
+
+.MenuContainer{
+    margin-top: 4%;
+}
+
+.MenuFirstDiv{
+    display: flex;
+    width: 57%;
+    justify-content: space-between;
+    margin: auto;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+.ForAllUls{
+    width: 18%;
+    /* border: 2px solid red; */
+}
+
+.ForAllUls li{
+    list-style: none;
+    line-height: 35px;
+    font-family: 'Fira Sans', sans-serif;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.ForAllUls li:hover{
+    text-decoration: underline;
+    color: rgb(154, 2, 2);
+}
+
+.MenuFirstDiv ul button{
+    margin-top: 15px;
+}
+
+.ForBoldLi{
+    font-weight: bold;
+}
+
+hr{
+    width: 62%;
+    border: 1.5px solid rgb(182, 181, 181);
+    background-color: rgb(184, 184, 184);
+}
