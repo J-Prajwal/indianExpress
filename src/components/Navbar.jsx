@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import style from "../Header_CSS/Navbar.module.css";
+import style from "../NAVBAR_CSS/HEADER_CSS/Navbar.module.css";
 import {
   Modal,
   ModalOverlay,

@@ -1,5 +1,5 @@
 import React from "react";
-import style from "../Header_CSS/Logo.module.css";
+import style from "../NAVBAR_CSS/HEADER_CSS/Logo.module.css";
 import {
   Tooltip,
   Flex,

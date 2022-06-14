@@ -1,0 +1,64 @@
+
+.MainContainerForFooter{
+    background-color: black;
+    position: relative;
+    bottom: 0px;
+    width: 100%; 
+    margin-top: 10%; 
+}
+
+.FooterContainer{
+    width: 60%;
+    margin: auto;
+}
+
+.FooterContainer hr{
+    border: 1px solid gray;
+    width: 100%;
+}
+.FooterContainer h2{
+    color: rgb(98, 97, 97);
+    font-weight: bold;
+    margin: 10px 0px 10px 0px;
+}
+.FooterDivSection{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 4%;
+}
+
+.FooterDivSection ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 1px solid yellow; */
+}
+.FooterDivSection li::before{
+    background: #595959;
+    border-radius: 50%;
+    content: "";
+    height: 8px;
+    left: -20px;
+    position: absolute;
+    top: 12px;
+    width: 8px;
+}
+.FooterDivSection li{
+    list-style: none;
+    position: relative;
+    color: white;
+    line-height: 42px;
+}
+
+/* .FooterSubHeadings{
+    
+} */
+
+.FooterMidDIv{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
