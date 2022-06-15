@@ -22,37 +22,46 @@
   border-top: 3px solid red;
 }
 
-
 /* ======================================================================================= */
 
-.LogoBody{
-    display: flex;
-    background-color: #f3f0f0;
-    padding: 15px 20px;
-    font-family: sans-serif;
-} 
-
-.FollowLinks{
-    text-align: center;
-    /* border: 2px solid red; */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+.LogoBody {
+  display: flex;
+  background-color: #f3f0f0;
+  padding: 15px 20px;
+  font-family: sans-serif;
 }
 
-.LogoBody label{
-    font-size: 13px;
-    font-weight: bold;
+.FollowLinks {
+  text-align: center;
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-.LogoImgDiv{
-    margin-left: 33%;
-    text-align: center;
-    /* border: 2px solid red; */
-    width: 25%;
-    cursor: pointer;
+.LogoBody label {
+  font-size: 13px;
+  font-weight: bold;
 }
 
-.LogoImgDiv img{
-    margin-bottom: 5px;
+.LogoImgDiv {
+  margin-left: 33%;
+  text-align: center;
+  /* border: 2px solid red; */
+  width: 25%;
+  cursor: pointer;
+}
+
+.LogoImgDiv img {
+  margin-bottom: 5px;
+}
+
+/* ============================================================================================================ */
+
+/* ============ MEDIA QUERIES ================== */
+
+@media only screen and (max-width: 768px) and (min-width: 413px) {
+  .Media_logo {
+    display: none;
+  }
 }

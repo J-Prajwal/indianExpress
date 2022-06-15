@@ -51,7 +51,7 @@ var today = dayOfWeek + ", " + curMonth + " " + dayOfMonth + ",  " + curYear;
 
 const Logo = () => {
   return (
-    <div>
+    <div className={style.Media_logo}>
       <div className={style.LogoHead}>
         <div className={style.MultyLang}>
           <Flex>
