@@ -5,6 +5,7 @@ import {
   Wrap,
   WrapItem,
   Avatar,
+  Link
 } from "@chakra-ui/react";
 
 import style from "../NAVBAR_CSS/FOOTER_CSS/Footer.module.css";
@@ -27,118 +28,106 @@ const Footer = () => {
           <div className={style.FooterDivSection}>
             <UnorderedList>
               <ListItem>
-                <a
+                <Link
                   href="https://indianexpress.com/section/explained/"
-                  target="_blank"
-                  rel="noopener"
+                  isExternal
                 >
                   Explained News
-                </a>
+                </Link>
               </ListItem>
               <ListItem>
-                <a
+                <Link
                   href="https://indianexpress.com/section/cities/delhi/"
-                  target="_blank"
-                  rel="noopener"
+                  isExternal
                 >
                   Delhi News
-                </a>
+                </Link>
               </ListItem>
               <ListItem>
-                <a
+                <Link
                   href="https://indianexpress.com/section/lifestyle/health/"
-                  target="_blank"
-                  rel="noopener"
+                  isExternal
                 >
                   Health News
-                </a>
+                </Link>
               </ListItem>
             </UnorderedList>
             <UnorderedList>
               <ListItem>
-                <a
+                <Link
                   href="https://indianexpress.com/section/india/political-pulse/"
-                  target="_blank"
-                  rel="noopener"
+                  isExternal
                 >
                   Political Pulse
-                </a>
+                </Link>
               </ListItem>
               <ListItem>
-                <a
+                <Link
                   href="https://indianexpress.com/section/cities/pune/"
-                  target="_blank"
-                  rel="noopener"
+                  isExternal
                 >
                   Pune News
-                </a>
+                </Link>
               </ListItem>
               <ListItem>
-                <a
+                <Link
                   href="https://indianexpress.com/section/india/"
-                  target="_blank"
-                  rel="noopener"
+                  isExternal
                 >
                   India News
-                </a>
+                </Link>
               </ListItem>
             </UnorderedList>
             <UnorderedList>
               <ListItem>
-                <a
+                <Link
                   href="https://indianexpress.com/section/opinion/"
-                  target="_blank"
-                  rel="noopener"
+                  isExternal
                 >
                   Latest Opinion
-                </a>
+                </Link>
               </ListItem>
               <ListItem>
-                <a
+                <Link
                   href="https://indianexpress.com/section/cities/bangalore/"
-                  target="_blank"
-                  rel="noopener"
+                  isExternal
                 >
                   Bangalore News
-                </a>
+                </Link>
               </ListItem>
               <ListItem>
-                <a
+                <Link
                   href="https://indianexpress.com/section/sports/"
-                  target="_blank"
-                  rel="noopener"
+                  isExternal
                 >
                   Sports News
-                </a>
+                </Link>
               </ListItem>
             </UnorderedList>
             <UnorderedList>
               <ListItem>
-                <a
+                <Link
                   href="https://indianexpress.com/section/cities/mumbai/"
-                  target="_blank"
-                  rel="noopener"
+                 isExternal
                 >
                   Mumbai News
-                </a>
+                </Link>
               </ListItem>
               <ListItem>
-                <a
+                <Link
                   href="https://indianexpress.com/section/entertainment/bollywood/"
-                  target="_blank"
-                  rel="noopener"
+                  isExternal
                 >
                   Bollywood News
-                </a>
+                </Link>
               </ListItem>
               <ListItem>
-                <a
+                <Link
                   href="https://indianexpress.com/section/lifestyle/"
-                  target="_blank"
-                  rel="noopener"
+                  isExternal
                 >
                   Lifestyle News
-                </a>
+                </Link>
               </ListItem>
             </UnorderedList>
           </div>
@@ -153,154 +142,138 @@ const Footer = () => {
           <div className={style.FooterDivSection}>
             <UnorderedList>
               <ListItem>
-                <a
+                <Link
                   href="https://indianexpress.com/section/horoscope/"
-                  target="_blank"
-                  rel="noopener"
+                  isExternal
                 >
                   Horoscope
-                </a>
+                </Link>
               </ListItem>
               <ListItem>
-                <a
+                <Link
                   href="https://indianexpress.com/section/horoscope/"
-                  target="_blank"
-                  rel="noopener"
+                  isExternal
                 >
                   Horoscope
-                </a>
+                </Link>
               </ListItem>
               <ListItem>
-                <a
+                <Link
                   href="https://indianexpress.com/subscribe/all-access/"
-                  target="_blank"
-                  rel="noopener"
+                  isExternal
                 >
                   Buy All-Access pass
-                </a>
+                </Link>
               </ListItem>
               <ListItem>
-                <a
+                <Link
                   href="https://indianexpress.com/subscribe/all-access/"
-                  target="_blank"
-                  rel="noopener"
+                  isExternal
                 >
                   Buy All-Access pass
-                </a>
+                </Link>
               </ListItem>
             </UnorderedList>
             <UnorderedList>
               <ListItem>
-                <a
+                <Link
                   href="https://indianexpress.com/section/india/"
-                  target="_blank"
-                  rel="noopener"
+                  isExternal
                 >
                   India News
-                </a>
+                </Link>
               </ListItem>
               <ListItem>
-                <a
+                <Link
                   href="https://indianexpress.com/section/entertainment/"
-                  target="_blank"
-                  rel="noopener"
+                  isExternal
                 >
                   Entertainment News
-                </a>
+                </Link>
               </ListItem>
               <ListItem>
-                <a
+                <Link
                   href="https://indianexpress.com/subscribe/"
-                  target="_blank"
-                  rel="noopener"
+                  isExternal
                 >
                   Subscribe to The Indian Express
-                </a>
+                </Link>
               </ListItem>
               <ListItem>
-                <a
+                <Link
                   href="https://indianexpress.com/article/cities/bangalore/bengaluru-news-live-updates-bommai-weather-southwest-monsoon-covid-textbook-row-7946592/"
-                  target="_blank"
-                  rel="noopener"
+                  isExternal
                 >
                   Bengaluru News Live
-                </a>
+                </Link>
               </ListItem>
             </UnorderedList>
             <UnorderedList>
               <ListItem>
-                <a
+                <Link
                   href="https://eureka.indianexpress.com/video/art-craft/"
-                  target="_blank"
-                  rel="noopener"
+                  isExternal
                 >
                   Art &amp; Craft Classes for Kids
-                </a>
+                </Link>
               </ListItem>
               <ListItem>
-                <a
+                <Link
                   href="https://indianexpress.com/section/upsc-current-affairs/"
-                  target="_blank"
-                  rel="noopener"
+                  isExternal
                 >
                   UPSC News
-                </a>
+                </Link>
               </ListItem>
               <ListItem>
-                <a
+                <Link
                   href="https://indianexpress.com/subscribe/premium/"
-                  target="_blank"
-                  rel="noopener"
+                  isExternal
                 >
                   Buy Digital Premium
-                </a>
+                </Link>
               </ListItem>
               <ListItem>
-                <a
+                <Link
                   href="https://indianexpress.com/article/cities/mumbai/mumbai-news-live-updates-weather-rains-ncb-traffic-covid-7946612/"
-                  target="_blank"
-                  rel="noopener"
+                  isExternal
                 >
                   Mumbai News Live
-                </a>
+                </Link>
               </ListItem>
             </UnorderedList>
             <UnorderedList>
               <ListItem>
-                <a
+                <Link
                   href="https://eureka.indianexpress.com/video/fitness/"
-                  target="_blank"
-                  rel="noopener"
+                  isExternal
                 >
                   Fitness Classes for Kids
-                </a>
+                </Link>
               </ListItem>
               <ListItem>
-                <a
+                <Link
                   href="https://indianexpress.com/section/sports/ipl"
-                  target="_blank"
-                  rel="noopener"
+                  isExternal
                 >
                   IPL 2022 News
-                </a>
+                </Link>
               </ListItem>
               <ListItem>
-                <a
+                <Link
                   href="https://indianexpress.com/subscribe/epaper/"
-                  target="_blank"
-                  rel="noopener"
+                 isExternal
                 >
                   Buy Indian Express e-paper
-                </a>
+                </Link>
               </ListItem>
               <ListItem>
-                <a
+                <Link
                   href="https://indianexpress.com/article/cities/chennai/chennai-news-live-updates-stalin-covid-weather-dmk-aiadmk-bjp-fuel-price-7946616/"
-                  target="_blank"
-                  rel="noopener"
+                  isExternal
                 >
                   Chennai News Live
-                </a>
+                </Link>
               </ListItem>
             </UnorderedList>
           </div>
@@ -315,90 +288,82 @@ const Footer = () => {
           <div className={style.FooterContainer_one}>
             <UnorderedList>
               <ListItem>
-                <a
+                <Link
                   href="https://indianexpress.com/article/sports/football/england-slumps-to-historic-loss-to-hungary-in-nations-league-7970284/"
-                  target="_blank"
-                  rel="noopener"
+                  isExternal
                 >
                   Nations League: England suffer its worst home defeat since
                   1928 with a 4-0 loss to Hungary
-                </a>
+                </Link>
               </ListItem>
               <ListItem>
-                <a
+                <Link
                   href="https://indianexpress.com/article/cities/chennai/chennai-news-live-updates-today-tamil-nadu-covid-weather-stalin-dmk-aiadmk-gcc-traffic-7970257/"
-                  target="_blank"
-                  rel="noopener"
+                  isExternal
                 >
                   Chennai News Live: Fresh Covid-19 cases breach 300-mark in
                   Tamil Nadu, 171 new cases in state capital
-                </a>
+                </Link>
               </ListItem>
             </UnorderedList>
             <UnorderedList>
               <ListItem>
-                <a
+                <Link
                   href="https://indianexpress.com/article/cities/jammu/two-militants-killed-in-south-kashmirs-shopian-police-say-one-of-them-killed-rajasthan-bank-manager-7970286/"
-                  target="_blank"
-                  rel="noopener"
+                  isExternal
                 >
                   Two militants killed in South Kashmir’s Shopian, police say
                   one of them killed Rajasthan bank manager
-                </a>
+                </Link>
               </ListItem>
               <ListItem>
-                <a
+                <Link
                   href="https://indianexpress.com/article/sports/while-you-were-asleep-england-slump-to-historic-loss-and-afghans-complete-a-clean-sweep-7970239/"
-                  target="_blank"
-                  rel="noopener"
+                  isExternal
                 >
                   While you were asleep: England slump to historic loss, Germany
                   crush Italy and Afghans complete a clean sweep
-                </a>
+                </Link>
               </ListItem>
             </UnorderedList>
             <UnorderedList>
               <ListItem>
-                <a
+                <Link
                   href="https://indianexpress.com/article/cities/pune/pune-fire-company-basement-shivajinagar-7970288/"
-                  target="_blank"
-                  rel="noopener"
+                 isExternal
                 >
                   Pune: Fire in company record room in building basement in
                   Shivajinagar area.
-                </a>
+                </Link>
               </ListItem>
               <ListItem>
-                <a
+                <Link
                   href="https://indianexpress.com/article/world/pak-army-says-defence-budget-for-2022-23-decreases-from-2-8-of-the-gdp-to-2-2-by-sajjad-hussain-7970271/"
-                  target="_blank"
-                  rel="noopener"
+                  isExternal
                 >
                   Pak Army says defence budget for 2022-23 decreases from 2.8%
                   of the GDP to 2.2% By Sajjad Hussain
-                </a>
+                </Link>
               </ListItem>
             </UnorderedList>
             <UnorderedList>
               <ListItem>
-                <a
+                <Link
                   href="https://indianexpress.com/article/sports/cricket/ranji-trophy-2022-semifinals-day-2-live-score-streaming-online-updates-7970008/"
-                  target="_blank"
-                  rel="noopener"
+                  isExternal
                 >
                   Ranji Trophy 2022 Semifinals, Day 2 Live: MP, Mumbai look to
                   build on strong start
-                </a>
+                </Link>
               </ListItem>
               <ListItem>
-                <a
+                <Link
                   href="https://indianexpress.com/article/lifestyle/life-positive/you-need-discipline-and-hard-work-to-achieve-your-dreams-arvind-arora-life-positive-7965856/"
-                  target="_blank"
-                  rel="noopener"
+                  isExternal
                 >
                   ‘You need discipline and hard work to achieve your dreams’:
                   Arvind Arora
-                </a>
+                </Link>
               </ListItem>
             </UnorderedList>
           </div>
@@ -501,144 +466,129 @@ const Footer = () => {
                 <div>
                   <ul>
                     <li>
-                      <a
+                      <Link
                         href="https://indianexpress.com/"
-                        aria-current="page"
-                        target="_blank"
-                        rel="noopener"
+                        
+                        isExternal
                       >
                         The Indian Express
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="https://www.financialexpress.com/"
-                        target="_blank"
-                        rel="noopener"
+                        isExternal
                       >
                         The Financial Express
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="https://www.loksatta.com/"
-                        target="_blank"
-                        rel="noopener"
+                        isExternal
                       >
                         Loksatta
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="https://www.jansatta.com/"
-                        target="_blank"
-                        rel="noopener"
+                        isExternal
                       >
                         Jansatta
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="https://expressgroup.indianexpress.com/"
-                        target="_blank"
-                        rel="noopener"
+                        isExternal
                       >
                         The ExpressGroup
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="https://indianexpress.com/newsletters/"
-                        target="_blank"
-                        rel="noopener"
+                        isExternal
                       >
                         Newsletters
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="https://rngfoundation.com/awards/"
-                        target="_blank"
-                        rel="noopener"
+                        isExternal
                       >
                         Ramnath Goenka Excellence in Journalism Awards
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="https://www.lighthousejournalism.com/"
-                        target="_blank"
-                        rel="noopener"
+                        isExternal
                       >
                         Light House Journalism
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
                 <div>
                   <ul>
                     <li>
-                      <a
+                      <Link
                         href="https://tamil.indianexpress.com/"
-                        target="_blank"
-                        rel="noopener"
+                        isExternal
                       >
                         ieTamil.com
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="https://bengali.indianexpress.com/"
-                        target="_blank"
-                        rel="noopener"
+                        isExternal
                       >
                         ieBangla.com
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="https://malayalam.indianexpress.com/"
-                        target="_blank"
-                        rel="noopener"
+                        isExternal
                       >
                         ieMalayalam.com
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="https://www.inuth.com/"
-                        target="_blank"
-                        rel="noopener"
+                        isExternal
                       >
                         inUth
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="https://www.myinsuranceclub.com/"
-                        target="_blank"
-                        rel="noopener"
+                        isExternal
                       >
                         MyInsuranceClub
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="https://indianexpress.com/26-11/"
-                        target="_blank"
-                        rel="noopener"
+                        isExternal
                       >
                         26/11 Stories of Strength
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="https://eureka.indianexpress.com/"
-                        target="_blank"
-                        rel="noopener"
+                        isExternal
                       >
                         Online Classes for Kids
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -651,69 +601,63 @@ const Footer = () => {
             <div>
               <ul>
                 <li>
-                  <a
+                  <Link
                     href="/terms-and-conditions/"
-                    target="_blank"
-                    rel="noopener"
+                    isExternal
                   >
                     T&amp;C
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/privacy-policy/" target="_blank" rel="noopener">
+                  <Link href="/privacy-policy/" isExternal>
                     Privacy Policy
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a
+                  <Link
                     href="https://indianexpress.com/brand-solutions/"
-                    target="_blank"
-                    rel="noopener"
+                    isExternal
                   >
                     Brand Solutions
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/contact-us/" target="_blank" rel="noopener">
+                  <Link href="/contact-us/" isExternal>
                     Contact Us
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="http://subscribe.indianexpress.com/"
-                    target="_blank"
-                    rel="noopener"
+                    isExternal
                   >
                     Subscribe
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="https://indianexpress.com/article/what-is/what-is-the-protection-of-children-from-sexual-offences-act-2012/"
-                    target="_blank"
-                    rel="noopener"
+                    isExternal
                   >
                     Statutory provisions on reporting (sexual offenses)
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="https://indianexpress.com/article/india/code-of-ethics-for-digital-news-websites-6758543/"
-                    target="_blank"
-                    rel="noopener"
+                    isExternal
                   >
                     This website follows the DNPA’s code of conduct
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    target="_blank"
-                    rel="noopener"
+                  <Link
+                    isExternal
                     href="https://expressgroup.indianexpress.com/corporate-social-responsibility.html"
                   >
                     CSR
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
