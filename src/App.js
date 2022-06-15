@@ -9,7 +9,7 @@ function App() {
     <div className="page-container">
       <div className="content-wrapper">
       <Header />
-      <Footer/>
+      {/* <Footer/> */}
       </div>
       <Routes>
         <Route path="/login" element={<Login/>}></Route>

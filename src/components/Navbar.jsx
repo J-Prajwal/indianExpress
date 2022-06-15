@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import style from "../NAVBAR_CSS/HEADER_CSS/Navbar.module.css";
+import style from "./HEADER_CSS/Navbar.module.css";
 import {
   Modal,
   ModalOverlay,
@@ -20,7 +20,11 @@ import { HamburgerIcon, SearchIcon } from "@chakra-ui/icons";
 
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const { isOpen:Media, onOpen:openMedia, onClose:CloseMedia } = useDisclosure();
+  const {
+    isOpen: Media,
+    onOpen: openMedia,
+    onClose: CloseMedia,
+  } = useDisclosure();
   const {
     isOpen: Search,
     onOpen: openSearch,
@@ -31,7 +35,6 @@ const Navbar = () => {
 
   return (
     <div className={style.NavbarMainDiv}>
-
       <div className={style.MenuIconBtn}>
         <Button
           onClick={onOpen}
@@ -245,81 +248,90 @@ const Navbar = () => {
       </div>
 
       <div className={style.MenuIconBtn_medium}>
-       
-          <Button
-            onClick={openMedia}
-            icon={<HamburgerIcon />}
-            as={IconButton}
-            aria-label="Options"
-            bg="none"
-            variant="none"
-            fontSize="35px"
-            color="white"
-          ></Button>
-          <div className={style.MediaScreen}>
-            <Modal onClose={CloseMedia} size="full" isOpen={Media}>
-              <ModalOverlay />
-              <ModalContent>
-                <ModalCloseButton />
-                <ModalBody bg="whitesmoke">
-                  <div className={style.MenuContainer}>
-                    <Link href="https://www.99acres.com/" isExternal>
-                      <h3>Home</h3>
-                    </Link>
-                    <Link href="https://www.99acres.com/" isExternal>
-                      <h3>Explained</h3>
-                    </Link>
-                    <Link href="https://www.99acres.com/" isExternal>
-                      <h3>Political Pulse</h3>
-                    </Link>
-                    <Link href="https://www.99acres.com/" isExternal>
-                      <h3>India</h3>
-                    </Link>
-                    <Link href="https://www.99acres.com/" isExternal>
-                      <h3>Cities</h3>
-                    </Link>
-                    <Link href="https://www.99acres.com/" isExternal>
-                      <h3>Opinion</h3>
-                    </Link>
-                    <Link href="https://www.99acres.com/" isExternal>
-                      <h3>Entertainment</h3>
-                    </Link>
-                    <Link href="https://www.99acres.com/" isExternal>
-                      <h3>Education</h3>
-                    </Link>
-                    <Link href="https://www.99acres.com/" isExternal>
-                      <h3>Premium</h3>
-                    </Link>
-                    <Link href="https://www.99acres.com/" isExternal>
-                      <h3>Sports</h3>
-                    </Link>
-                    <Link href="https://www.99acres.com/" isExternal>
-                      <h3>Audio</h3>
-                    </Link>
-
-                    <button className={style.NavLinks_btn1}>
-                      <Link href="https://www.99acres.com/" isExternal>
-                        99acres.com
-                      </Link>
-                    </button>
-                    <button className={style.NavLinks_btn2}>Subscribe</button>
-                    <Link href="/login" isExternal>
-                      <h3>Sign in</h3>
-                    </Link>
+        <Button
+          onClick={openMedia}
+          icon={<HamburgerIcon />}
+          as={IconButton}
+          aria-label="Options"
+          bg="none"
+          variant="none"
+          fontSize="25px"
+          color="white"
+        ></Button>
+        <div className={style.MediaScreen}>
+          <Modal onClose={CloseMedia} size="full" isOpen={Media}>
+            <ModalOverlay />
+            <ModalContent>
+              <ModalCloseButton color="white"/>
+              <ModalBody bg="black" color="white">
+                <div className={style.Media_logo_medium_screen_1}>
+                  <div className={style.Black_modal_inner_logo}>
+                    <img
+                      src="	https://indianexpress.com/wp-content/themes/indianexpress/images/theindianexpress-logo-n.svg"
+                      alt="Indian Express"
+                    />
                   </div>
-                </ModalBody>
-              </ModalContent>
-            </Modal>
-          </div>
-        
+                </div>
+                <div className={style.MenuContainer}>
+                  <Link href="https://www.99acres.com/" isExternal>
+                    <h3>Home</h3>
+                  </Link>
+                  <Link href="https://www.99acres.com/" isExternal>
+                    <h3>Explained</h3>
+                  </Link>
+                  <Link href="https://www.99acres.com/" isExternal>
+                    <h3>Political Pulse</h3>
+                  </Link>
+                  <Link href="https://www.99acres.com/" isExternal>
+                    <h3>India</h3>
+                  </Link>
+                  <Link href="https://www.99acres.com/" isExternal>
+                    <h3>Cities</h3>
+                  </Link>
+                  <Link href="https://www.99acres.com/" isExternal>
+                    <h3>Opinion</h3>
+                  </Link>
+                  <Link href="https://www.99acres.com/" isExternal>
+                    <h3>Entertainment</h3>
+                  </Link>
+                  <Link href="https://www.99acres.com/" isExternal>
+                    <h3>Education</h3>
+                  </Link>
+                  <Link href="https://www.99acres.com/" isExternal>
+                    <h3>Premium</h3>
+                  </Link>
+                  <Link href="https://www.99acres.com/" isExternal>
+                    <h3>Sports</h3>
+                  </Link>
+                  <Link href="https://www.99acres.com/" isExternal>
+                    <h3>Audio</h3>
+                  </Link>
+
+                  <button className={style.NavLinks_btn1}>
+                    <Link href="https://www.99acres.com/" isExternal>
+                      99acres.com
+                    </Link>
+                  </button>
+                  <Link href="https://www.99acres.com/" isExternal>
+                    <h3>Subscribe</h3>
+                  </Link>
+                  <Link href="/login" isExternal>
+                    <h3>Sign in</h3>
+                  </Link>
+                </div>
+              </ModalBody>
+            </ModalContent>
+          </Modal>
+        </div>
       </div>
 
-
       <div className={style.Media_logo_medium_screen}>
-        <img
-          src="https://indianexpress.com/wp-content/themes/indianexpress/images/indian-express-logo-n.svg"
-          alt="Indian Express"
-        />
+        <div>
+          <img
+            src="	https://indianexpress.com/wp-content/themes/indianexpress/images/theindianexpress-logo-n.svg"
+            alt="Indian Express"
+          />
+        </div>
       </div>
       <div className={style.NavLinks}>
         <Link href="https://www.99acres.com/" isExternal>
@@ -394,6 +406,16 @@ const Navbar = () => {
             </ModalBody>
           </ModalContent>
         </Modal>
+      </div>
+
+      <div className={style.Subscribe_button}>
+        <button>Subscribe</button>
+        <div>
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/709/709579.png"
+            alt="user"
+          />
+        </div>
       </div>
     </div>
   );

@@ -8,7 +8,7 @@ import {
   Link
 } from "@chakra-ui/react";
 
-import style from "../NAVBAR_CSS/FOOTER_CSS/Footer.module.css";
+import style from "./FOOTER_CSS/Footer.module.css";
 
 const Footer = () => {
   let d = new Date();
