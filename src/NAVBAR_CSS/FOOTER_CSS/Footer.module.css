@@ -5,30 +5,38 @@
     bottom: 0px;
     width: 100%; 
     margin-top: 10%; 
+    padding: 5px 0px;
+    font-family: 'Roboto', serif;
 }
 
-.FooterContainer{
+.WidthDeciderFor_footer{
     width: 60%;
     margin: auto;
 }
 
-.FooterContainer hr{
-    border: 1px solid gray;
+.FooterContainer{
     width: 100%;
+}
+
+.WidthDeciderFor_footer hr{
+    border: 0.1px solid gray;
+    width: 100%;
+    padding: 0px;
 }
 .FooterContainer h2{
     color: rgb(98, 97, 97);
     font-weight: bold;
     margin: 10px 0px 10px 0px;
 }
-.FooterDivSection{
+.FooterDivSection {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    margin-top: 4%;
+    margin-top: 2%;
 }
 
 .FooterDivSection ul{
+    width: 25%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -48,17 +56,189 @@
     list-style: none;
     position: relative;
     color: white;
-    line-height: 42px;
+    line-height: 35px;
+    font-size: 13px;
+}
+
+.FooterContainer_one li::before{
+    background: #595959;
+    border-radius: 50%;
+    content: "";
+    height: 8px;
+    left: -20px;
+    position: absolute;
+    top: 6px;
+    width: 8px;
+}
+
+.FooterContainer_one {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.FooterContainer_one ul{
+    width: 23%;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4%;
+    margin-top: 2%;
+    /* border: 1px solid yellow; */
+}
+
+.FooterContainer_one li{
+    list-style: none;
+    position: relative;
+    color: white;
+    line-height: 18px;
+    font-size: 13px;
+    margin-top: 6%;
 }
 
 /* .FooterSubHeadings{
     
 } */
 
+/* ============================================================================================= */
+/* ============================================================================================= */
+
 .FooterMidDIv{
-    width: 60%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
     color: white;
+    margin-bottom: 20px;
+}
+
+.FooterBtmDiv{
+    width: 100%;
+    color: white;
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+}
+
+.FooterMidDIv_first{
+    border-right: 1px solid gray;
+    /* border: 1px solid yellow; */
+    margin-top: 7%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.FooterMidDIv_third{
+    margin-top: 7%;
+}
+
+.FooterMidDIv_first_subA{
+    border-bottom: 1px solid gray;
+    padding-bottom: 20px;
+    width: 93%;
+    height: 50%;
+    margin-bottom: 20px;
+}
+
+.FooterMidDIv_first_subA div h1{
+    margin: 2px 1px 10px 1px;
+    font-size: 14px;
+    color: gray;
+    font-weight: bold;
+}
+
+.FooterMidDIv_first_subA div h1+div{
+    margin: 2px 1px 15px 1px;
+}
+
+.FooterMidDIv_first_subB{
+    height: 50%;
+}
+
+.FooterMidDIv_first_subA div{
+    height: auto;
+}
+
+.Sub_a img{
+filter: invert(60%);
+margin-top: -10px;
+}
+
+.FooterMidDIv_NewsGuard{
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-around;
+}
+
+.FooterMidDIv_NewsGuard>div:nth-child(1){
+    width: 8%;
+}
+
+.FooterMidDIv_NewsGuard>div:nth-child(2){
+    width: 85%;
+}
+
+.FooterMidDIv_NewsGuard p{
+    font-size: 12px;
+    font-weight: 700;
+    color: rgb(172, 172, 172);
+}
+
+
+/* ================================================================================================= */
+/* ================================================================================================= */
+
+.FooterMidDIv_Second{
+    border-right: 1px solid gray;
+    margin-top: 4%;
+    padding: 0px 20px;
+}
+
+.FooterMidDIv_Second h1{
+    font-size: 14px;
+    color: gray;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.ExpressGrpLinks_container{
+    display: flex;
+}
+.ExpressGrpLinks_container>div{
+    margin-right: 60px;
+    width: 48%;
+}
+.ExpressGrpLinks_container ul li{
+    list-style: none;
+    font-size: 13px;
+    line-height: 25px;
+}
+
+
+/* ===================================================================================================== */
+/* ===================================================================================================== */
+.FooterMidDIv_third{
+    padding: 0px 20px;
+}
+.FooterMidDIv_third h1{
+    font-size: 14px;
+    color: gray;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.FooterMidDIv_third li{
+    list-style: none;
+    font-size: 13px;
+    line-height: 25px;
+}
+
+/* ==================================================================================== */
+/* ==================================================================================== */
+
+.FooterBtmDiv p{
+font-size: 13px;
+margin-top: 10px;
+color: gray;
 }
