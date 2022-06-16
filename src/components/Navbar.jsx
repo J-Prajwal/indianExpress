@@ -4,19 +4,20 @@ import {
   Modal,
   ModalOverlay,
   ModalContent,
-  ModalHeader,
-  ModalFooter,
   ModalBody,
   ModalCloseButton,
   Button,
   useDisclosure,
   IconButton,
   Link,
-  FormControl,
-  FormLabel,
   Input,
+  Flex,
+  Spacer,
+  Tooltip,
+  InputGroup,
+  InputRightElement,
 } from "@chakra-ui/react";
-import { HamburgerIcon, SearchIcon } from "@chakra-ui/icons";
+import { HamburgerIcon, Search2Icon, SearchIcon } from "@chakra-ui/icons";
 
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -262,7 +263,7 @@ const Navbar = () => {
           <Modal onClose={CloseMedia} size="full" isOpen={Media}>
             <ModalOverlay />
             <ModalContent>
-              <ModalCloseButton color="white"/>
+              <ModalCloseButton color="white" />
               <ModalBody bg="black" color="white">
                 <div className={style.Media_logo_medium_screen_1}>
                   <div className={style.Black_modal_inner_logo}>
@@ -270,6 +271,29 @@ const Navbar = () => {
                       src="	https://indianexpress.com/wp-content/themes/indianexpress/images/theindianexpress-logo-n.svg"
                       alt="Indian Express"
                     />
+                  </div>
+                </div>
+
+                <div>
+                  <div>
+                    <InputGroup size="md">
+                      <Input
+                        pr="4.5rem"
+                        type= "text"
+                      />
+                      <InputRightElement width="4.5rem">
+                        <Button h="1.75rem" size="sm" bg='none' >
+                          <Search2Icon/>
+                        </Button>
+                      </InputRightElement>
+                    </InputGroup>
+                  </div>
+                  <div>
+                    <div className={style.Inner_subscribe_btn}>
+                      <h3>NewsLetters</h3>
+                    <button className={style.NavLinks_btn2}>Subscribe</button>
+                    <h3>Sign In</h3>
+                    </div>
                   </div>
                 </div>
                 <div className={style.MenuContainer}>
@@ -318,6 +342,81 @@ const Navbar = () => {
                   <Link href="/login" isExternal>
                     <h3>Sign in</h3>
                   </Link>
+                </div>
+                <div className={style.MultyLang}>
+                  <Flex flexDirection="column">
+                    <li>
+                      <Tooltip
+                        hasArrow
+                        label="ENGLISH"
+                        bg="black"
+                        fontSize="x-small"
+                        aria-label="A tooltip"
+                      >
+                        ENGLISH
+                      </Tooltip>
+                    </li>
+                    <Spacer />
+                    <li>
+                      <Tooltip
+                        hasArrow
+                        label="TAMIL"
+                        bg="black"
+                        fontSize="x-small"
+                        aria-label="A tooltip"
+                      >
+                        தமிழ்
+                      </Tooltip>
+                    </li>
+                    <Spacer />
+                    <li>
+                      <Tooltip
+                        hasArrow
+                        label="BANGLA"
+                        bg="black"
+                        fontSize="x-small"
+                        aria-label="A tooltip"
+                      >
+                        বাংলা
+                      </Tooltip>
+                    </li>
+                    <Spacer />
+                    <li>
+                      <Tooltip
+                        hasArrow
+                        label="MALAYALAM"
+                        bg="black"
+                        fontSize="x-small"
+                        aria-label="A tooltip"
+                      >
+                        മലയാളം
+                      </Tooltip>
+                    </li>
+                    <Spacer />
+                    <li>
+                      <Tooltip
+                        hasArrow
+                        label="HINDI"
+                        bg="black"
+                        fontSize="x-small"
+                        aria-label="A tooltip"
+                      >
+                        हिंदी
+                      </Tooltip>
+                    </li>
+                    <Spacer />
+                    <li>
+                      <Tooltip
+                        hasArrow
+                        label="MARATHI"
+                        bg="black"
+                        fontSize="x-small"
+                        aria-label="A tooltip"
+                      >
+                        मराठी
+                      </Tooltip>
+                    </li>
+                  </Flex>
                 </div>
               </ModalBody>
             </ModalContent>
@@ -408,13 +507,15 @@ const Navbar = () => {
         </Modal>
       </div>
 
-      <div className={style.Subscribe_button}>
-        <button>Subscribe</button>
-        <div>
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/709/709579.png"
-            alt="user"
-          />
+      <div className={style.Subscribe_button_main}>
+        <div className={style.Subscribe_button}>
+          <button>Subscribe</button>
+          <div>
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/709/709579.png"
+              alt="user"
+            />
+          </div>
         </div>
       </div>
     </div>
