@@ -78,7 +78,11 @@ const Navbar = () => {
                       <li>Technology</li>
                       <li>Archives</li>
                       <button className={style.NavLinks_btn1}>
-                        <Link to="https://www.99acres.com/" replace>
+                        <Link
+                          to="https://www.99acres.com/"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
                           99acres.com
                         </Link>
                       </button>
@@ -277,13 +281,10 @@ const Navbar = () => {
                 <div>
                   <div>
                     <InputGroup size="md">
-                      <Input
-                        pr="4.5rem"
-                        type= "text"
-                      />
+                      <Input pr="4.5rem" type="text" />
                       <InputRightElement width="4.5rem">
-                        <Button h="1.75rem" size="sm" bg='none' >
-                          <Search2Icon/>
+                        <Button h="1.75rem" size="sm" bg="none">
+                          <Search2Icon />
                         </Button>
                       </InputRightElement>
                     </InputGroup>
@@ -291,55 +292,87 @@ const Navbar = () => {
                   <div>
                     <div className={style.Inner_subscribe_btn}>
                       <h3>NewsLetters</h3>
-                    <button className={style.NavLinks_btn2}>Subscribe</button>
-                    <h3>Sign In</h3>
+                      <button className={style.NavLinks_btn2}>Subscribe</button>
+                      <h3>Sign In</h3>
                     </div>
                   </div>
                 </div>
                 <div className={style.MenuContainer}>
-                  <Link to="https://www.99acres.com/" replace>
+                  <Link to="/" target="_blank" rel="noreferrer">
                     <h3>Home</h3>
                   </Link>
-                  <Link to="https://www.99acres.com/" replace>
+                  <Link
+                    to="https://www.99acres.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <h3>Explained</h3>
                   </Link>
-                  <Link to="https://www.99acres.com/" replace>
+                  <Link
+                    to="https://www.99acres.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <h3>Political Pulse</h3>
                   </Link>
-                  <Link to="https://www.99acres.com/" replace>
+                  <Link
+                    to="https://www.99acres.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <h3>India</h3>
                   </Link>
-                  <Link to="https://www.99acres.com/" replace>
+                  <Link to="/Cities" target="_blank" rel="noreferrer">
                     <h3>Cities</h3>
                   </Link>
-                  <Link to="https://www.99acres.com/" replace>
+                  <Link
+                    to="https://www.99acres.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <h3>Opinion</h3>
                   </Link>
-                  <Link to="https://www.99acres.com/" replace>
+                  <Link to="/Entertainment" target="_blank" rel="noreferrer">
                     <h3>Entertainment</h3>
                   </Link>
-                  <Link to="https://www.99acres.com/" replace>
+                  <Link to="/Education" target="_blank" rel="noreferrer">
                     <h3>Education</h3>
                   </Link>
-                  <Link to="https://www.99acres.com/" replace>
+                  <Link
+                    to="https://www.99acres.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <h3>Premium</h3>
                   </Link>
-                  <Link to="https://www.99acres.com/" replace>
+                  <Link to="/Sport" target="_blank" rel="noreferrer">
                     <h3>Sports</h3>
                   </Link>
-                  <Link to="https://www.99acres.com/" replace>
+                  <Link
+                    to="https://www.99acres.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <h3>Audio</h3>
                   </Link>
 
                   <button className={style.NavLinks_btn1}>
-                    <Link to="https://www.99acres.com/" replace>
+                    <Link
+                      to="https://www.99acres.com/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       99acres.com
                     </Link>
                   </button>
-                  <Link to="https://www.99acres.com/" replace>
+                  <Link
+                    to="https://www.99acres.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <h3>Subscribe</h3>
                   </Link>
-                  <Link to="/login" replace>
+                  <Link to="/login" target="_blank" rel="noreferrer">
                     <h3>Sign in</h3>
                   </Link>
                 </div>
@@ -433,47 +466,47 @@ const Navbar = () => {
         </div>
       </div>
       <div className={style.NavLinks}>
-        <Link to="https://www.99acres.com/" replace>
+        <Link to="/" target="_blank" rel="noreferrer">
           <h3>Home</h3>
         </Link>
-        <Link to="https://www.99acres.com/" replace>
+        <Link to="https://www.99acres.com/" target="_blank" rel="noreferrer">
           <h3>Explained</h3>
         </Link>
-        <Link to="https://www.99acres.com/" replace>
+        <Link to="https://www.99acres.com/" target="_blank" rel="noreferrer">
           <h3>Political Pulse</h3>
         </Link>
-        <Link to="https://www.99acres.com/" replace>
+        <Link to="https://www.99acres.com/" target="_blank" rel="noreferrer">
           <h3>India</h3>
         </Link>
-        <Link to="https://www.99acres.com/" replace>
+        <Link to="/Cities" target="_blank" rel="noreferrer">
           <h3>Cities</h3>
         </Link>
-        <Link to="https://www.99acres.com/" replace>
+        <Link to="https://www.99acres.com/" target="_blank" rel="noreferrer">
           <h3>Opinion</h3>
         </Link>
-        <Link to="https://www.99acres.com/" replace>
+        <Link to="/Entertainment" target="_blank" rel="noreferrer">
           <h3>Entertainment</h3>
         </Link>
-        <Link to="https://www.99acres.com/" replace>
+        <Link to="/Education" target="_blank" rel="noreferrer">
           <h3>Education</h3>
         </Link>
-        <Link to="https://www.99acres.com/" replace>
+        <Link to="https://www.99acres.com/" target="_blank" rel="noreferrer">
           <h3>Premium</h3>
         </Link>
-        <Link to="https://www.99acres.com/" replace>
+        <Link to="/Sport" target="_blank" rel="noreferrer">
           <h3>Sports</h3>
         </Link>
-        <Link to="https://www.99acres.com/" replace>
+        <Link to="https://www.99acres.com/" target="_blank" rel="noreferrer">
           <h3>Audio</h3>
         </Link>
 
         <button className={style.NavLinks_btn1}>
-          <Link to="https://www.99acres.com/" replace>
+          <Link to="https://www.99acres.com/" target="_blank" rel="noreferrer">
             99acres.com
           </Link>
         </button>
         <button className={style.NavLinks_btn2}>Subscribe</button>
-        <Link to="/login" replace>
+        <Link to="/login" target="_blank" rel="noreferrer">
           <h3>Sign in</h3>
         </Link>
       </div>
