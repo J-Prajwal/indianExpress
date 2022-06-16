@@ -9,7 +9,6 @@ import {
   Button,
   useDisclosure,
   IconButton,
-  Link,
   Input,
   Flex,
   Spacer,
@@ -17,6 +16,7 @@ import {
   InputGroup,
   InputRightElement,
 } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 import { HamburgerIcon, Search2Icon, SearchIcon } from "@chakra-ui/icons";
 
 const Navbar = () => {
@@ -78,7 +78,7 @@ const Navbar = () => {
                       <li>Technology</li>
                       <li>Archives</li>
                       <button className={style.NavLinks_btn1}>
-                        <Link href="https://www.99acres.com/" isExternal>
+                        <Link to="https://www.99acres.com/" replace>
                           99acres.com
                         </Link>
                       </button>
@@ -297,49 +297,49 @@ const Navbar = () => {
                   </div>
                 </div>
                 <div className={style.MenuContainer}>
-                  <Link href="https://www.99acres.com/" isExternal>
+                  <Link to="https://www.99acres.com/" replace>
                     <h3>Home</h3>
                   </Link>
-                  <Link href="https://www.99acres.com/" isExternal>
+                  <Link to="https://www.99acres.com/" replace>
                     <h3>Explained</h3>
                   </Link>
-                  <Link href="https://www.99acres.com/" isExternal>
+                  <Link to="https://www.99acres.com/" replace>
                     <h3>Political Pulse</h3>
                   </Link>
-                  <Link href="https://www.99acres.com/" isExternal>
+                  <Link to="https://www.99acres.com/" replace>
                     <h3>India</h3>
                   </Link>
-                  <Link href="https://www.99acres.com/" isExternal>
+                  <Link to="https://www.99acres.com/" replace>
                     <h3>Cities</h3>
                   </Link>
-                  <Link href="https://www.99acres.com/" isExternal>
+                  <Link to="https://www.99acres.com/" replace>
                     <h3>Opinion</h3>
                   </Link>
-                  <Link href="https://www.99acres.com/" isExternal>
+                  <Link to="https://www.99acres.com/" replace>
                     <h3>Entertainment</h3>
                   </Link>
-                  <Link href="https://www.99acres.com/" isExternal>
+                  <Link to="https://www.99acres.com/" replace>
                     <h3>Education</h3>
                   </Link>
-                  <Link href="https://www.99acres.com/" isExternal>
+                  <Link to="https://www.99acres.com/" replace>
                     <h3>Premium</h3>
                   </Link>
-                  <Link href="https://www.99acres.com/" isExternal>
+                  <Link to="https://www.99acres.com/" replace>
                     <h3>Sports</h3>
                   </Link>
-                  <Link href="https://www.99acres.com/" isExternal>
+                  <Link to="https://www.99acres.com/" replace>
                     <h3>Audio</h3>
                   </Link>
 
                   <button className={style.NavLinks_btn1}>
-                    <Link href="https://www.99acres.com/" isExternal>
+                    <Link to="https://www.99acres.com/" replace>
                       99acres.com
                     </Link>
                   </button>
-                  <Link href="https://www.99acres.com/" isExternal>
+                  <Link to="https://www.99acres.com/" replace>
                     <h3>Subscribe</h3>
                   </Link>
-                  <Link href="/login" isExternal>
+                  <Link to="/login" replace>
                     <h3>Sign in</h3>
                   </Link>
                 </div>
@@ -433,47 +433,47 @@ const Navbar = () => {
         </div>
       </div>
       <div className={style.NavLinks}>
-        <Link href="https://www.99acres.com/" isExternal>
+        <Link to="https://www.99acres.com/" replace>
           <h3>Home</h3>
         </Link>
-        <Link href="https://www.99acres.com/" isExternal>
+        <Link to="https://www.99acres.com/" replace>
           <h3>Explained</h3>
         </Link>
-        <Link href="https://www.99acres.com/" isExternal>
+        <Link to="https://www.99acres.com/" replace>
           <h3>Political Pulse</h3>
         </Link>
-        <Link href="https://www.99acres.com/" isExternal>
+        <Link to="https://www.99acres.com/" replace>
           <h3>India</h3>
         </Link>
-        <Link href="https://www.99acres.com/" isExternal>
+        <Link to="https://www.99acres.com/" replace>
           <h3>Cities</h3>
         </Link>
-        <Link href="https://www.99acres.com/" isExternal>
+        <Link to="https://www.99acres.com/" replace>
           <h3>Opinion</h3>
         </Link>
-        <Link href="https://www.99acres.com/" isExternal>
+        <Link to="https://www.99acres.com/" replace>
           <h3>Entertainment</h3>
         </Link>
-        <Link href="https://www.99acres.com/" isExternal>
+        <Link to="https://www.99acres.com/" replace>
           <h3>Education</h3>
         </Link>
-        <Link href="https://www.99acres.com/" isExternal>
+        <Link to="https://www.99acres.com/" replace>
           <h3>Premium</h3>
         </Link>
-        <Link href="https://www.99acres.com/" isExternal>
+        <Link to="https://www.99acres.com/" replace>
           <h3>Sports</h3>
         </Link>
-        <Link href="https://www.99acres.com/" isExternal>
+        <Link to="https://www.99acres.com/" replace>
           <h3>Audio</h3>
         </Link>
 
         <button className={style.NavLinks_btn1}>
-          <Link href="https://www.99acres.com/" isExternal>
+          <Link to="https://www.99acres.com/" replace>
             99acres.com
           </Link>
         </button>
         <button className={style.NavLinks_btn2}>Subscribe</button>
-        <Link href="/login" isExternal>
+        <Link to="/login" replace>
           <h3>Sign in</h3>
         </Link>
       </div>

@@ -8,17 +8,13 @@
   color: white;
   width: 100%;
   box-sizing: border-box;
-  /* position: fixed;
-    top: 17%;
-    width: 100%;
-    z-index: 999999; */
 }
 
 .NavLinks {
   display: flex;
-  /* justify-content: space-between; */
   gap: 8px;
   /* border: 2px solid red; */
+  margin-left: 10%;
   width: 65%;
 }
 .NavLinks a {
@@ -26,8 +22,6 @@
   font-weight: bold;
   font-family: sans-serif;
   line-height: 26px;
-  /* border: 2px solid yellow; */
-  /* height: 100%; */
 }
 
 .NavLinks a:hover {
@@ -59,6 +53,7 @@
 }
 
 .SearchIcondiv {
+  margin-left: 5%;
   margin-right: 2%;
 }
 
