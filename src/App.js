@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+
 import './App.css';
+// import Enterarticles from './pages/Entertainment/Enterarticles';
+import Entertaimentnews from './pages/Entertainment/Entertaimentnews';
+import Entertainment from './pages/Entertainment/Entertainment';
+import Entermore from './pages/Entertainment/Entersidebar/Entermore';
+import EnterApi from './pages/Entertainment/EnterApi';
+import Mininavbar from './pages/Entertainment/Navbar/Mininavbar';
+import MainEntertainment from './pages/Entertainment/MainEntertainment';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <MainEntertainment/>
     </div>
   );
 }
