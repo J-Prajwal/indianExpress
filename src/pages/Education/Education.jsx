@@ -199,7 +199,7 @@ const Education = () => {
               >
                 <GridItem rowSpan={1} colSpan={1}>
                   <Image
-                    boxSize="190px"
+                    boxSize="200px"
                     height="180px"
                     src={value.urlToImage}
                     alt="SportNews"
