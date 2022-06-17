@@ -190,7 +190,7 @@ const Education = () => {
           {data.map((value) => (
             <div key={value.url}>
               <Grid
-                h="200px"
+                h="190px"
                 templateRows="repeat(2, 1fr)"
                 templateColumns="repeat(5, 1fr)"
                 gap={1}
