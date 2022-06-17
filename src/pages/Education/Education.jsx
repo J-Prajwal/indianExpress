@@ -27,7 +27,8 @@ const Education = () => {
   useEffect(() => {
     axios
       .get(
-        `https://newsapi.org/v2/everything?q=education&from=2022-05-16&sortBy=publishedAt&apiKey=07ee45696e7b4c7dae7bc94ac0c4ddd6`
+        "https://newsapi.org/v2/everything?q=education&apiKey=07ee45696e7b4c7dae7bc94ac0c4ddd6"
+        // `https://newsapi.org/v2/everything?q=education&from=2022-05-16&sortBy=publishedAt&apiKey=07ee45696e7b4c7dae7bc94ac0c4ddd6`
       )
       .then((r) => setData(r.data.articles))
       .catch((e) => console.log(e));
