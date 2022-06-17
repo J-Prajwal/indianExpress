@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { v4 as uuidv4 } from 'uuid';
 import styled from "./Cities.module.css";
 // import { Image } from "@chakra-ui/react";
 // import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
@@ -17,7 +18,7 @@ const Cities = () => {
   console.log(data);
 
   return (
-    <div>
+    <div key={el.url}>
       <div className={styled.add1}>
         <img
           src="https://tpc.googlesyndication.com/daca_images/simgad/17135105900879832363"
@@ -37,7 +38,8 @@ const Cities = () => {
       </div>
       {data.map((el) => {
         return (
-          <div className="card mb-3" style={{ maxWidth: "540px" }}>
+          <div className={styled.maindiv}>
+          <div className="card mb-3" style={{ maxWidth: "540px" ,justifyContent:"center"}}>
             <div className="row g-0">
               <div className="col-md-4">
                 <img
@@ -45,6 +47,7 @@ const Cities = () => {
                   className="img-fluid rounded-start"
                   alt="..."
                 />
+                <p>{el.author}</p>
               </div>
               <div className="col-md-8">
                 <div className="card-body">
@@ -52,12 +55,13 @@ const Cities = () => {
                   <p className="card-text">{el.description}</p>
                   <p className="card-text">
                     <small className="text-muted">
-                      Last updated 3 mins ago
+                      {el.publishedAt}
                     </small>
                   </p>
                 </div>
               </div>
             </div>
+          </div>
           </div>
         );
       })}
