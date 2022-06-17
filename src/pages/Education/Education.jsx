@@ -43,7 +43,7 @@ const Education = () => {
           h="50px"
           templateRows="repeat(2, 1fr)"
           templateColumns="repeat(5, 1fr)"
-          gap={1}
+          gap={0}
         >
           <GridItem
             rowSpan={1}
@@ -84,7 +84,7 @@ const Education = () => {
             </Carousel>
           </GridItem>
         </Grid>
-        <Breadcrumb>
+        <Breadcrumb mb="20px">
           <BreadcrumbItem>
             <BreadcrumbLink href="#" color="red">
               Home
@@ -186,11 +186,11 @@ const Education = () => {
           </Box>
         </HStack>
 
-        <Box mt={5}>
+        <Box mr={5} mt="20px">
           {data.map((value) => (
             <div key={value.url}>
               <Grid
-                h="210px"
+                h="190px"
                 templateRows="repeat(2, 1fr)"
                 templateColumns="repeat(5, 1fr)"
                 gap={1}
@@ -200,6 +200,7 @@ const Education = () => {
                 <GridItem rowSpan={1} colSpan={1}>
                   <Image
                     boxSize="200px"
+                    height="180px"
                     src={value.urlToImage}
                     alt="SportNews"
                   />
@@ -207,6 +208,7 @@ const Education = () => {
                 <GridItem colSpan={4} bg="while" >
                   <Heading fontSize="20px">{value.title}</Heading>
                   <Text fontSize="15px">{value.publishedAt}</Text>
+                  <br/>
                   <Text>{value.description}</Text>
                 </GridItem>
               </Grid>
