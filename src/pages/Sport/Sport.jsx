@@ -13,7 +13,6 @@ import {
   Box,
   Image,
   HStack,
-  Container,
   Grid,
   GridItem,
   Button,
