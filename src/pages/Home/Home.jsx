@@ -11,6 +11,8 @@ const Home = () => {
   };
 
   const [topNews, setTopNews] = useState([]);
+  const [latestNews, setLatestNews] = useState([]);
+
   let i = 0;
   useEffect(() => {
     axios
@@ -21,6 +23,16 @@ const Home = () => {
         setTopNews(r.data.articles);
       })
       .catch((err) => alert(err));
+  }, []);
+
+  useEffect(() => {
+    axios
+      .get(
+        "https://newsdata.io/api/1/news?apikey=pub_8388f9e9492da67b017e34d4bdd4eca23d1b&country=in&language=en&category=top"
+      )
+      .then((r) => {
+        setLatestNews(r.data.results);
+      });
   }, []);
 
   return (
@@ -158,7 +170,178 @@ const Home = () => {
       </div>
       {/* News with Ad section */}
 
-      
+      {/* main section starts here */}
+      <div className={styles.main}>
+        {" "}
+        {/* main container - parent */}
+        <div className={styles.mainLeft}>
+          <div className={styles.mainLeft_left}>
+            {/* showing all the news with picture here */}
+            {topNews.map((news) => {
+              return (
+                <div className={styles.newsContainer}>
+                  <div className={styles.newsImg}>
+                    <img src={news.urlToImage} alt="" />
+                  </div>
+                  <div className={styles.newsTitle}>
+                    <h6>{news.title}</h6>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+          <div className={styles.mainLeft_right}>
+            <div style={{ paddingLeft: "5px" }}>
+              <h4>
+                LATEST NEWS{" "}
+                <i class="fa-solid fa-angle-right" style={{ color: "red" }}></i>
+              </h4>
+            </div>
+            {latestNews.map((news) => {
+              return (
+                <div className={styles.partition}>
+                  <a
+                    href={news.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.link}
+                  >
+                    {news.title}
+                  </a>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+        <div className={styles.mainRight}>
+          <Carousel
+            activeIndex={index}
+            onSelect={handleSelect}
+            fade
+            controls={false}
+            indicators={false}
+          >
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="https://images.indianexpress.com/2021/08/MSME_300x100-Updated.png"
+                alt="First slide"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="https://images.indianexpress.com/2021/08/300X100-story-1-1.jpg"
+                alt="Second slide"
+              />
+            </Carousel.Item>
+          </Carousel>
+          <div className={styles.mainRight_partition}>
+            <div style={{ borderBottom: "1px solid grey" }}>
+              <h4>
+                EDITORIALS{" "}
+                <i class="fa-solid fa-angle-right" style={{ color: "red" }}></i>
+              </h4>
+            </div>
+            <div style={{ display: "flex", justifyContent: "space-around" }}>
+              <div style={{ width: "500%", fontSize: "15px" }}>
+                <img
+                  src="https://images.indianexpress.com/2022/06/edit.jpg?w=210"
+                  alt=""
+                />
+                What is needed is employment in manufacturing, especially for
+                low and semi-skilled workers. Private sector must lead the way
+              </div>
+            </div>
+          </div>
+          <div className={styles.mainRight_partition}>
+            <div style={{paddingLeft: "5px"}}>
+              <h5>OPINION</h5>
+            </div>
+            <div className={styles.flexBox}>
+              <div className={styles.opinionImg}>
+                <img
+                  src="https://images.indianexpress.com/2013/12/volumn.jpg?w=210"
+                  alt=""
+                />
+              </div>
+              <div className={styles.opinionData}>
+                <p className={styles.names}>Suhas Palshikar</p>
+                <p className={styles.titles}>Congress in its labyrinth</p>
+              </div>
+            </div>
+            <div className={styles.flexBox}>
+              <div className={styles.opinionImg}>
+                <img
+                  src="https://images.indianexpress.com/2020/07/author1.jpg?w=210"
+                  alt=""
+                />
+              </div>
+              <div className={styles.opinionData}>
+                <p className={styles.names}>Deepika Saraswat</p>
+                <p className={styles.titles}>
+                  Iran foreign minister’s visit reaffirms resolve of two
+                  countries to strengthen ties
+                </p>
+              </div>
+            </div>
+            <div className={styles.flexBox}>
+              <div className={styles.opinionImg}>
+                <img
+                  src="https://images.indianexpress.com/2015/01/anup-surendranath1.jpg?w=210"
+                  alt=""
+                />
+              </div>
+              <div className={styles.opinionData}>
+                <p className={styles.names}>Anup Surendranath</p>
+                <p className={styles.titles}>
+                  There is a concerted effort to plug procedural gaps in death
+                  penalty sentencing
+                </p>
+              </div>
+            </div>
+            <div className={styles.flexBox}>
+              <div className={styles.opinionImg}>
+                <img
+                  src="https://images.indianexpress.com/2015/02/untitled-41.jpg?w=210"
+                  alt=""
+                />
+              </div>
+              <div className={styles.opinionData}>
+                <p className={styles.names}>Kapil Sibal</p>
+                <p className={styles.titles}>
+                  Lawmakers become law breakers, there is no one to appeal to
+                </p>
+              </div>
+            </div>
+            <div className={styles.flexBox}>
+              <div className={styles.opinionImg}>
+                <img
+                  src="https://images.indianexpress.com/2015/01/rakhshanda-jalil-1.jpg?w=210"
+                  alt=""
+                />
+              </div>
+              <div className={styles.opinionData}>
+                <p className={styles.names}>Rakhshanda Jalil</p>
+                <p className={styles.titles}>Scholar and teacher Gopichand Narang believed in Urdu’s ability to build bridges</p>
+              </div>
+            </div>
+            <div className={styles.flexBox}>
+              <div className={styles.opinionImg}>
+                <img
+                  src="https://images.indianexpress.com/2013/12/chris.jpg?w=210"
+                  alt=""
+                />
+              </div>
+              <div className={styles.opinionData}>
+                <p className={styles.names}>Christophe Jaffrelot</p>
+                <p className={styles.titles}>Inflation's uneven toll</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* main section ends here */}
     </div>
   );
 };
