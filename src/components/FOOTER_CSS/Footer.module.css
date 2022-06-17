@@ -163,6 +163,7 @@
 .Sub_a img {
   filter: invert(60%);
   margin-top: -10px;
+  width: 50%;
 }
 
 .FooterMidDIv_NewsGuard {
@@ -242,7 +243,11 @@
   color: gray;
 }
 
-
+.FooterBtmDiv div div{
+  /* border: 1px solid yellow; */
+  width: 50%;
+  float: right;
+}
 
 /* ============Media Queries =================== */
 

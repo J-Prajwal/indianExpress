@@ -507,7 +507,7 @@ const Footer = () => {
             </p>
           </div>
           <div>
-            <p>
+            <div>
               <a
                 href="https://vip.wordpress.com/?utm_source=vip_powered_wpcom&amp;utm_medium=web&amp;utm_campaign=VIP%20Footer%20Credit&amp;utm_term=indianexpress.com"
                 rel="noopener"
@@ -522,7 +522,7 @@ const Footer = () => {
                   height="26"
                 />
               </a>
-            </p>
+            </div>
           </div>
         </div>
       </div>
