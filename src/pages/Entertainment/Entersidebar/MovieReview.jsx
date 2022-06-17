@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from '../Entersidebar/Movie.module.css'
+import Morenews from './Morenews'
 
 
 const MovieReview = () => {
@@ -57,7 +58,7 @@ const MovieReview = () => {
         </div>
        
     </div>
- 
+    <Morenews/>
     </div>
   )
 }

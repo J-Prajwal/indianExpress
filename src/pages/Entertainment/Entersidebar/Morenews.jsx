@@ -1,14 +1,14 @@
 import axios from 'axios'
 import React,{useEffect,useState} from 'react'
 import styles from '../Entersidebar/Entermore.module.css'
-import MovieReview from './MovieReview'
-const Entermore = () => {
+import {useParams} from 'react-router-dom'
+const Morenews = () => {
   const [Moreenter, setMoreenter] = useState([])
-
+  const params=useParams()
   useEffect(() => {
    
     axios
-    .get(`https://newsapi.org/v2/everything?q=bollywood&from=2022-05-17&apiKey=cc3256391f47466b93db6bbd192db4a4`)
+    .get(`https://newsapi.org/v2/everything?q=Tollywood&from=2022-05-17&apiKey=cc3256391f47466b93db6bbd192db4a4`)
     .then(({data})=>{
       setMoreenter(data.articles)
     })
@@ -22,7 +22,7 @@ const Entermore = () => {
 
   return (
     <div>
-        <h3>MORE ENTERTAINMENT</h3>
+        <h3>Best Of Express</h3>
         <div>
            {Moreenter.map((data)=>(
             
@@ -37,12 +37,12 @@ const Entermore = () => {
          </div>
            ))}
         </div>
-        <MovieReview/>
+       
     </div>
    
   )
 }
 
-export default Entermore
+export default Morenews
 
 

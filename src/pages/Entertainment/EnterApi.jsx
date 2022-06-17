@@ -4,10 +4,7 @@ import Enterarticles from './Enterarticles'
 
 
 const EnterApi = () => {
-// var moment = require('moment');
-// let date= moment().format('YYYY-MM-DD')
 
-// console.log(date)
 
 let headline=JSON.parse(localStorage.getItem('titles'))
 
@@ -29,6 +26,7 @@ axios
 
 
 }, [])
+
 
 
 
