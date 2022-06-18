@@ -6,10 +6,11 @@ gap: 10px;
 
 .moviemaindiv>div>p{
     margin-top: 0px;
+    font-size: small;
 }
 
 .moviemaindiv>div>div{
-    margin-top: -20px;
+ 
     display: flex;
 }
 

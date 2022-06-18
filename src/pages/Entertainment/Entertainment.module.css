@@ -8,7 +8,7 @@
 
 .bighead{
    
-    position: absolute;
+  
     width: 390px;
     background-color: red;
     color: white;
@@ -22,10 +22,17 @@
 
 }
 .temp{
-    width: 500px;
-    border: 1px solid black;
-    height: 450px;
+    width: 600px;
+    border: 10px solid lightgray;
+    height: 400px;
     box-sizing: border-box;
+}
+
+.enternewshead{
+    font-weight: bold;
+    padding-bottom: 10px;
+    font-size: large;
+    
 }
 
 .imgstyle{
@@ -34,4 +41,6 @@
 
 .center{
     text-align: center;
+    color: tomato;
+    font-weight: 800;
 }
