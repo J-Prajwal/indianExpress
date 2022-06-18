@@ -49,15 +49,19 @@
   margin-top: 8px;
   margin-left: 3px;
 }
+
+
 .news {
-  width: 60%;
-  margin: auto;
+  width: 70%;
+  /* margin: auto; */
   /* display:flex */
 }
 .maindiv {
-  /* width: 50%;
-  margin: auto; */
-  display:flex
+
+  margin-top: 12px; 
+  display:flex;
+  width:96%;
+  margin:auto;
 }
 
 .add{
@@ -66,4 +70,12 @@
 }
 .sidenews{
     width:20%
+}
+h5{
+  
+  font-weight: 800;
+  font-size:20px
+}
+h5:hover{
+  color:red
 }

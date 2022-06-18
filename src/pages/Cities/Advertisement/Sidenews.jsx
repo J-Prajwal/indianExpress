@@ -26,7 +26,7 @@ const Sidenews = ({ title, content, publishedAt, urlToImage, description }) => {
     localStorage.setItem("new", JSON.stringify(localdata));
   };
   return (
-    <div>
+    <div style={{marginTop:"10px"}}>
       {sidedata.map((el) => {
         return (
           <div
