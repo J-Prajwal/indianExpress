@@ -1,5 +1,7 @@
 .moreent{
     display: flex;
+    margin-top: 10px;
+    gap: 10px;
 }
 
 .sidenews{
@@ -14,5 +16,10 @@
 
 .content{
     font-size: small;
-    margin-top: -11px;
+    
+}
+
+.content:hover{
+    color: tomato;
+    cursor: pointer;
 }

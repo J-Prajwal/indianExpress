@@ -13,7 +13,7 @@ const MovieReview = () => {
        
         <div>
             <img src="https://images.indianexpress.com/2022/06/nani-movie.jpg?resize=450,250" style={{height:"80px",width:"144px"}} alt="" />
-            <p>ANTE</p>
+            <p>ANTE SUNDARANIKI</p>
             <div>
                 <img src="https://indianexpress.com/wp-content/themes/indianexpress/images/star-one.gif" alt="" style={{height:"9px",width:"10px"}}  />
                 <img src="https://indianexpress.com/wp-content/themes/indianexpress/images/star-one.gif" alt="" style={{height:"9px",width:"10px"}}/>
@@ -24,7 +24,7 @@ const MovieReview = () => {
         </div>
         <div>
             <img src="https://images.indianexpress.com/2022/06/Ghode-Ko-Jalebi-Khilane-Le-Ja-Riya-Hoon-review-1200.jpg?resize=450,250"  style={{height:"80px",width:"144px"}} alt="" />
-            <p>ANTE</p>
+            <p>GHODE KO JALEBI KHILANE LE JA RIYA HOON</p>
             <div>
                 <img src="https://indianexpress.com/wp-content/themes/indianexpress/images/star-one.gif" alt="" style={{height:"9px",width:"10px"}} />
                 <img src="https://indianexpress.com/wp-content/themes/indianexpress/images/star-one.gif" alt="" style={{height:"9px",width:"10px"}} />
@@ -35,7 +35,7 @@ const MovieReview = () => {
         </div>
         <div>
             <img src="https://images.indianexpress.com/2022/06/777-charlie-1200.jpg?resize=450,250"  style={{height:"80px",width:"144px"}} alt="" />
-            <p>ANTE</p>
+            <p>777 CHARLIE</p>
             <div>
                 <img src="https://indianexpress.com/wp-content/themes/indianexpress/images/star-one.gif" alt="" style={{height:"9px",width:"10px"}} />
                 <img src="https://indianexpress.com/wp-content/themes/indianexpress/images/star-one.gif" alt="" style={{height:"9px",width:"10px"}} />
@@ -47,7 +47,7 @@ const MovieReview = () => {
         </div>
         <div>
             <img src="https://images.indianexpress.com/2022/06/janhit-mein-jaari-1200.jpg?resize=450,250"  style={{height:"80px",width:"144px"}} alt="" />
-            <p>ANTE</p>
+            <p>JANHIT MEIN JAARI</p>
             <div>
                 <img src="https://indianexpress.com/wp-content/themes/indianexpress/images/star-one.gif" alt="" style={{height:"9px",width:"10px"}} />
                 <img src="https://indianexpress.com/wp-content/themes/indianexpress/images/star-one.gif" alt="" style={{height:"9px",width:"10px"}} />

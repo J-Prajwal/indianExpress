@@ -8,13 +8,14 @@ const Entermore = () => {
   useEffect(() => {
    
     axios
-    .get(`https://newsapi.org/v2/everything?q=bollywood&from=2022-05-17&apiKey=cc3256391f47466b93db6bbd192db4a4`)
+    .get(`https://newsapi.org/v2/everything?q=entertainment&from=2022-05-18&sortBy=publishedAt&apiKey=58aa853356384f19a88049b3ce553605`)
     .then(({data})=>{
       setMoreenter(data.articles)
     })
   
   
   }, [])
+  
 
 
   
@@ -22,7 +23,8 @@ const Entermore = () => {
 
   return (
     <div>
-        <h3>MORE ENTERTAINMENT</h3>
+        <h3 style={{marginTop:'10px'}}>MORE ENTERTAINMENT</h3>
+        <hr />
         <div>
            {Moreenter.map((data)=>(
             

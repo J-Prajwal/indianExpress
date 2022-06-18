@@ -7,7 +7,7 @@ import Mininavbar from './Navbar/Mininavbar'
 
 const MainEntertainment = () => {
   return (
-    <div style={{width:'85%',margin:'auto'}} >
+    <div style={{width:'85%',margin:'auto' , marginTop:'25px'}} >
          <Mininavbar/>
       <div style={{display:'flex'}}>
     <div>

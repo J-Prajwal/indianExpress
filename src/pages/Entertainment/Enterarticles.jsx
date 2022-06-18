@@ -21,15 +21,17 @@ const  haldleclick=()=>{
       <div className={styles.img}>
       <img className={styles.articlesimg} src={urlToImage} alt=""/>
       </div>
+    
       <div className={styles.articles}>
         
           <h4 onClick={haldleclick} className={styles.headline}>{title}</h4>
-          <div style={{fontSize:'small',marginTop:'-12px'}}>{publishedAt}</div>
+          <div style={{fontSize:'small',marginTop:'5px'}}>{publishedAt}</div>
           
           <p className={styles.para}>{content}</p>
           <hr />
       
       </div>
+    
     </div>
   )
 }
