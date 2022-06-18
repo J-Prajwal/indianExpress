@@ -1,0 +1,18 @@
+.moviemaindiv{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+gap: 10px;
+}
+
+.moviemaindiv>div>p{
+    margin-top: 0px;
+}
+
+.moviemaindiv>div>div{
+    margin-top: -20px;
+    display: flex;
+}
+
+.hrline{
+    border: 2px solid #5b5a5a;
+}

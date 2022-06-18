@@ -1,0 +1,18 @@
+.moreent{
+    display: flex;
+}
+
+.sidenews{
+    width: 230px;
+ 
+}
+
+.moreentred{
+    color: red;
+    margin-top: 0px;
+}
+
+.content{
+    font-size: small;
+    margin-top: -11px;
+}
