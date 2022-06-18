@@ -80,7 +80,7 @@ const Navbar = () => {
                       <button className={style.NavLinks_btn1}>
                         <Link
                           to="https://www.99acres.com/"
-                          target="_blank"
+                          
                           rel="noreferrer"
                         >
                           99acres.com
@@ -298,59 +298,59 @@ const Navbar = () => {
                   </div>
                 </div>
                 <div className={style.MenuContainer}>
-                  <Link to="/" target="_blank" rel="noreferrer">
+                  <Link to="/"  rel="noreferrer">
                     <h3>Home</h3>
                   </Link>
                   <Link
                     to="https://www.99acres.com/"
-                    target="_blank"
+                    
                     rel="noreferrer"
                   >
                     <h3>Explained</h3>
                   </Link>
                   <Link
                     to="https://www.99acres.com/"
-                    target="_blank"
+                    
                     rel="noreferrer"
                   >
                     <h3>Political Pulse</h3>
                   </Link>
                   <Link
                     to="https://www.99acres.com/"
-                    target="_blank"
+                    
                     rel="noreferrer"
                   >
                     <h3>India</h3>
                   </Link>
-                  <Link to="/Cities" target="_blank" rel="noreferrer">
+                  <Link to="/Cities"  rel="noreferrer">
                     <h3>Cities</h3>
                   </Link>
                   <Link
                     to="https://www.99acres.com/"
-                    target="_blank"
+                    
                     rel="noreferrer"
                   >
                     <h3>Opinion</h3>
                   </Link>
-                  <Link to="/Entertainment" target="_blank" rel="noreferrer">
+                  <Link to="/Entertainment"  rel="noreferrer">
                     <h3>Entertainment</h3>
                   </Link>
-                  <Link to="/Education" target="_blank" rel="noreferrer">
+                  <Link to="/Education"  rel="noreferrer">
                     <h3>Education</h3>
                   </Link>
                   <Link
                     to="https://www.99acres.com/"
-                    target="_blank"
+                    
                     rel="noreferrer"
                   >
                     <h3>Premium</h3>
                   </Link>
-                  <Link to="/Sport" target="_blank" rel="noreferrer">
+                  <Link to="/Sport"  rel="noreferrer">
                     <h3>Sports</h3>
                   </Link>
                   <Link
                     to="https://www.99acres.com/"
-                    target="_blank"
+                    
                     rel="noreferrer"
                   >
                     <h3>Audio</h3>
@@ -359,7 +359,7 @@ const Navbar = () => {
                   <button className={style.NavLinks_btn1}>
                     <Link
                       to="https://www.99acres.com/"
-                      target="_blank"
+                      
                       rel="noreferrer"
                     >
                       99acres.com
@@ -367,12 +367,12 @@ const Navbar = () => {
                   </button>
                   <Link
                     to="https://www.99acres.com/"
-                    target="_blank"
+                    
                     rel="noreferrer"
                   >
                     <h3>Subscribe</h3>
                   </Link>
-                  <Link to="/login" target="_blank" rel="noreferrer">
+                  <Link to="/login"  rel="noreferrer">
                     <h3>Sign in</h3>
                   </Link>
                 </div>
@@ -466,47 +466,47 @@ const Navbar = () => {
         </div>
       </div>
       <div className={style.NavLinks}>
-        <Link to="/" target="_blank" rel="noreferrer">
+        <Link to="/"  rel="noreferrer">
           <h3>Home</h3>
         </Link>
-        <Link to="https://www.99acres.com/" target="_blank" rel="noreferrer">
+        <Link to="https://www.99acres.com/"  rel="noreferrer">
           <h3>Explained</h3>
         </Link>
-        <Link to="https://www.99acres.com/" target="_blank" rel="noreferrer">
+        <Link to="https://www.99acres.com/"  rel="noreferrer">
           <h3>Political Pulse</h3>
         </Link>
-        <Link to="https://www.99acres.com/" target="_blank" rel="noreferrer">
+        <Link to="https://www.99acres.com/"  rel="noreferrer">
           <h3>India</h3>
         </Link>
-        <Link to="/Cities" target="_blank" rel="noreferrer">
+        <Link to="/Cities"  rel="noreferrer">
           <h3>Cities</h3>
         </Link>
-        <Link to="https://www.99acres.com/" target="_blank" rel="noreferrer">
+        <Link to="https://www.99acres.com/"  rel="noreferrer">
           <h3>Opinion</h3>
         </Link>
-        <Link to="/Entertainment" target="_blank" rel="noreferrer">
+        <Link to="/Entertainment"  rel="noreferrer">
           <h3>Entertainment</h3>
         </Link>
-        <Link to="/Education" target="_blank" rel="noreferrer">
+        <Link to="/Education"  rel="noreferrer">
           <h3>Education</h3>
         </Link>
-        <Link to="https://www.99acres.com/" target="_blank" rel="noreferrer">
+        <Link to="https://www.99acres.com/"  rel="noreferrer">
           <h3>Premium</h3>
         </Link>
-        <Link to="/Sport" target="_blank" rel="noreferrer">
+        <Link to="/Sport"  rel="noreferrer">
           <h3>Sports</h3>
         </Link>
-        <Link to="https://www.99acres.com/" target="_blank" rel="noreferrer">
+        <Link to="https://www.99acres.com/"  rel="noreferrer">
           <h3>Audio</h3>
         </Link>
 
         <button className={style.NavLinks_btn1}>
-          <Link to="https://www.99acres.com/" target="_blank" rel="noreferrer">
+          <Link to="https://www.99acres.com/"  rel="noreferrer">
             99acres.com
           </Link>
         </button>
         <button className={style.NavLinks_btn2}>Subscribe</button>
-        <Link to="/login" target="_blank" rel="noreferrer">
+        <Link to="/login"  rel="noreferrer">
           <h3>Sign in</h3>
         </Link>
       </div>
