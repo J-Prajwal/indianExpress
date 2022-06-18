@@ -1,4 +1,3 @@
-
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
@@ -14,11 +13,10 @@ import Login from "./components/Login/Login";
 function App() {
   return (
     <div>
-  
       <Header />
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        <Route path="/Entertainment" element={<MainEntertainment/>}></Route>
+        <Route path="/Entertainment" element={<MainEntertainment />}></Route>
         <Route path="/Education" element={<Education />}></Route>
         <Route path="/Cities" element={<Cities />}></Route>
         <Route path="/Sport" element={<Sport />}></Route>
@@ -26,7 +24,6 @@ function App() {
         <Route path="/Login" element={<Login />}></Route>
       </Routes>
       <Footer />
-
     </div>
   );
 }
