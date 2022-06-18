@@ -1,10 +1,10 @@
 import axios from 'axios'
 import React,{useEffect,useState} from 'react'
 import styles from '../Entersidebar/Entermore.module.css'
-import {useParams} from 'react-router-dom'
+
 const Morenews = () => {
   const [Moreenter, setMoreenter] = useState([])
-  const params=useParams()
+ 
   useEffect(() => {
    
     axios
@@ -27,7 +27,7 @@ const Morenews = () => {
            {Moreenter.map((data)=>(
             
              <div className={styles.moreent}>
-             <img src={data.urlToImage} height={83} width={150} alt="" />
+             <img src={data.urlToImage}style={{height:"83px",width:"150px"}}  alt="" />
              <div className={styles.sidenews}>
                  <p className={styles.moreentred}>Entertainment</p>
                  <p className={styles.content}>{data.content}</p>

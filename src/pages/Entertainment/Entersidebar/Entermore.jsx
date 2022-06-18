@@ -27,7 +27,7 @@ const Entermore = () => {
            {Moreenter.map((data)=>(
             
              <div className={styles.moreent}>
-             <img src={data.urlToImage} height={83} width={150} alt="" />
+             <img src={data.urlToImage} style={{height:"83px",width:"150px"}} alt="" />
              <div className={styles.sidenews}>
                  <p className={styles.moreentred}>Entertainment</p>
                  <p className={styles.content}>{data.content}</p>

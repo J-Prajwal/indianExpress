@@ -18,7 +18,7 @@ const Detailnews = () => {
             <h3>{details.des}</h3>
         </div>
         <div>
-            <img src={details.img} alt="" height={356} width={640} />
+            <img src={details.img} alt=""  style={{height:'356px',width:'640px'}} />
             <div >{details.content}</div>
         </div>
       </div>

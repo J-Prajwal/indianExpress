@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import axios from "axios";
-import style from "../Education/Education.module.css";
+import style from "../Sport/Sport.module.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import {
@@ -13,7 +13,6 @@ import {
   Box,
   Image,
   HStack,
-  Container,
   Grid,
   GridItem,
   Button,
@@ -21,23 +20,21 @@ import {
   WrapItem,
 } from "@chakra-ui/react";
 
-const Education = () => {
+const Sport = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
     axios
       .get(
-        "https://newsapi.org/v2/everything?q=education&apiKey=07ee45696e7b4c7dae7bc94ac0c4ddd6"
-        // `https://newsapi.org/v2/everything?q=education&from=2022-05-16&sortBy=publishedAt&apiKey=07ee45696e7b4c7dae7bc94ac0c4ddd6`
+        `https://newsapi.org/v2/top-headlines?country=in&category=sports&apiKey=07ee45696e7b4c7dae7bc94ac0c4ddd6`
       )
       .then((r) => setData(r.data.articles))
       .catch((e) => console.log(e));
   }, []);
 
   console.log(data);
-
   return (
-    <div id={style.Education_main}>
+    <div id={style.Sport_main}>
       <div>
         <Grid
           h="50px"
@@ -65,22 +62,26 @@ const Education = () => {
             >
               <Box>
                 {" "}
-                Maharashtra SSC Class 10th results declared; pass percentage
-                comes down to ‘regular range’
+                Cycling coach RK Sharma faces more heat: star cyclist Deborah
+                Herold says he slapped, harassed her
               </Box>
               <Box>
-                WBJEE 2022 result to be released today: Here’s how to check
-                marks
+                Where Liverpool’s record signing Darwin Nunez stands among
+                Europe’s best goal-scorers
               </Box>
               <Box>
                 {" "}
-                NCERT drops content on Gujarat riots from Class 12 textbook
+                ‘Expectations hurt’: Rahul Tewatia tweets after Team India snub
+                for Ireland tour
               </Box>
               <Box>
-                Agnipath Recruitment Scheme: NIOS to launch customised courses
-                for ‘Agniveers’ to clear Class 12 exams
+                India versus Ireland: Rishabh Pant & Shreyas Iyer’s omission
+                from T20I squad likely due to commitment for the Birmingham
               </Box>
-              <Box>Bihar STET 2022 exam cancelled; know why</Box>
+              <Box>
+                Faster, Sharper, Better – the all new Bhuvneshwar Kumar is back
+                with a bang
+              </Box>
             </Carousel>
           </GridItem>
         </Grid>
@@ -91,39 +92,55 @@ const Education = () => {
             </BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbItem>
-            <BreadcrumbLink href="#">Education</BreadcrumbLink>
+            <BreadcrumbLink href="#">Sports</BreadcrumbLink>
           </BreadcrumbItem>
         </Breadcrumb>
+
         <HStack direction="column">
           <Text fontSize="25px" fontWeight="bold" color="red">
-            EDUCATION
+            SPORTS
           </Text>
           <Wrap spacing={0} _hover>
             <WrapItem>
               <Button color="gray" variant="ghost" border="red">
-                JOBS
+                CRICKET
               </Button>
             </WrapItem>
             <WrapItem>
               <Button color="gray" variant="ghost" border="red">
-                STUDENTS VOICE
+                FOOTBALL
               </Button>
             </WrapItem>
             <WrapItem>
               <Button color="gray" variant="ghost" border="red">
-                STUDY ABROAD
+                TENNIS
               </Button>
             </WrapItem>
             <WrapItem>
               <Button color="gray" variant="ghost" border="red">
-                MOCK TEST
+                WWE
+              </Button>
+            </WrapItem>
+            <WrapItem>
+              <Button color="gray" variant="ghost" border="red">
+                PHOTOS
+              </Button>
+            </WrapItem>
+            <WrapItem>
+              <Button color="gray" variant="ghost" border="red">
+                PODCAST
+              </Button>
+            </WrapItem>
+            <WrapItem>
+              <Button color="gray" variant="ghost" border="red">
+                EXPLAINED
               </Button>
             </WrapItem>
           </Wrap>
         </HStack>
 
         <Text fontWeight="bold" fontSize="20">
-          EDUCATION NEWS
+          Sports
         </Text>
         <HStack>
           <Box>
@@ -135,52 +152,55 @@ const Education = () => {
               className="presentation-mode"
             >
               <Box maxW={730}>
-                <Image src="https://images.indianexpress.com/2022/06/ch1160699-1-1.jpg?resize=480,260" />
+                <Image src="https://images.indianexpress.com/2022/06/deborah-herold-cycling.jpg?resize=480,260" />
                 <Text fontSize={25}>
-                  Maharashtra SSC Class 10th results declared; pass percentage
-                  comes down to ‘regular range’
+                  Cycling coach RK Sharma faces more heat: star cyclist Deborah
+                  Herold says he slapped, harassed her
                 </Text>
               </Box>
               <Box maxW={720}>
-                <Image src="https://images.indianexpress.com/2022/05/WhatsApp-Image-2022-05-16-at-5.49.02-PM.jpg?resize=480,260" />
+                <Image src="https://images.indianexpress.com/2022/06/Untitled-design-9-3.jpg?resize=480,260" />
                 <Text fontSize={25}>
-                  WBJEE 2022 result to be released today: Here’s how to check
-                  marks
+                  Where Liverpool’s record signing Darwin Nunez stands among
+                  Europe’s best goal-scorers
                 </Text>
               </Box>
               <Box maxW={720}>
-                <Image src="https://images.indianexpress.com/2022/06/gujarat-riots.jpg?resize=480,260" />
+                <Image src="https://images.indianexpress.com/2022/06/Rahul-Tewatia.jpg?resize=480,260" />
                 <Text fontSize={25}>
-                  NCERT drops content on Gujarat riots from Class 12 textbook
+                  ‘Expectations hurt’: Rahul Tewatia tweets after Team India
+                  snub for Ireland tour
                 </Text>
               </Box>
               <Box maxW={720}>
-                <Image src="https://images.indianexpress.com/2022/06/indian-army-1-1.jpeg?resize=480,260" />
+                <Image src="https://images.indianexpress.com/2022/06/shreyas-iyer-rishabh-pant.jpg?resize=480,260" />
                 <Text fontSize={25}>
-                  Agnipath Recruitment Scheme: NIOS to launch customised courses
-                  for ‘Agniveers’ to clear Class 12 exams
+                  India versus Ireland: Rishabh Pant & Shreyas Iyer’s omission
+                  from T20I squad likely due to commitment for the Birmingham
                 </Text>
               </Box>
               <Box maxW={720}>
-                <Image src="https://images.indianexpress.com/2022/06/Bihar-STET.jpg?resize=480,260" />
+                <Image src="https://images.indianexpress.com/2022/06/Untitled-design-7.jpg?resize=480,260" />
                 <Text fontSize={25}>
-                  Bihar STET 2022 exam cancelled; know why
+                  Faster, Sharper, Better – the all new Bhuvneshwar Kumar is
+                  back with a bang
                 </Text>
               </Box>
             </Carousel>
           </Box>
           <Box>
             <Box>
-              <Image src="https://images.indianexpress.com/2022/06/JEE-Main-2022-card-1.jpg?resize=250,175" />
+              <Image src="https://images.indianexpress.com/2022/06/Bandon.jpg?resize=250,175" />
               <Text fontSize="17px">
-                NTA JEE Main 2022 Session 1 Admit Card Highlights: Admit card
-                link to go live at jeemain.nta.nic.in
+                Bandon Mein Tha Dum review: While comprehensive, series falls
+                flat in capturing glory & drama of India’s win
               </Text>
             </Box>
             <Box>
-              <Image src="https://images.indianexpress.com/2022/06/ch1441446-1.jpg?resize=250,175" />
+              <Image src="https://images.indianexpress.com/2022/06/Chhetri-3.jpg?resize=250,175" />
               <Text fontSize="17px">
-                TN board +2, SSLC Result 2022: Date and time announced
+                Yours faithfully, Sunil Chhetri: The reliable, versatile
+                talisman leads Indian football from the front
               </Text>
             </Box>
           </Box>
@@ -206,8 +226,8 @@ const Education = () => {
                   />
                 </GridItem>
                 <GridItem colSpan={4} bg="while" >
-                  <Heading fontSize="20px">{value.title}</Heading>
-                  <Text fontSize="15px">{value.publishedAt}</Text>
+                  <Heading fontSize="25px">{value.title}</Heading>
+                  <Text fontSize="15">{value.publishedAt}</Text>
                   <br/>
                   <Text>{value.description}</Text>
                 </GridItem>
@@ -220,4 +240,4 @@ const Education = () => {
   );
 };
 
-export default Education;
+export default Sport;

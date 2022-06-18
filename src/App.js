@@ -1,23 +1,30 @@
 
-import './App.css';
-// import Enterarticles from './pages/Entertainment/Enterarticles';
-import Entertaimentnews from './pages/Entertainment/Entertaimentnews';
-import Entertainment from './pages/Entertainment/Entertainment';
-import Entermore from './pages/Entertainment/Entersidebar/Entermore';
-import EnterApi from './pages/Entertainment/EnterApi';
-import Mininavbar from './pages/Entertainment/Navbar/Mininavbar';
-import MainEntertainment from './pages/Entertainment/MainEntertainment';
-import { Route, Routes } from 'react-router-dom';
-import Detailnews from './pages/Entertainment/Detailnews/Detailnews';
+import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Home from "./pages/Home/Home";
+import MainEntertainment from "./pages/Entertainment/MainEntertainment";
+import Cities from "./pages/Cities/Cities";
+import Sport from "./pages/Sport/Sport";
+import Education from "./pages/Education/Education";
+import DetailedNews from "./pages/DetailedNews/DetailedNews";
 
 function App() {
   return (
-    <div className="App">
+    <div>
+  
+      <Header />
       <Routes>
-        <Route path=''element={<MainEntertainment/>}/>
-        <Route path='detailsnews' element={<Detailnews/>}/>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/Entertainment" element={<MainEntertainment/>}></Route>
+        <Route path="/Education" element={<Education />}></Route>
+        <Route path="/Cities" element={<Cities />}></Route>
+        <Route path="/Sport" element={<Sport />}></Route>
+        <Route path="/Details" element={<DetailedNews />}></Route>
       </Routes>
-     
+      <Footer />
+
     </div>
   );
 }
