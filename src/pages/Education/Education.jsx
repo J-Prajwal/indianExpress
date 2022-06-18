@@ -86,12 +86,12 @@ const Education = () => {
         </Grid>
         <Breadcrumb mb="20px">
           <BreadcrumbItem>
-            <BreadcrumbLink href="#" color="red">
+            <BreadcrumbLink href="/" color="red">
               Home
             </BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbItem>
-            <BreadcrumbLink href="#">Education</BreadcrumbLink>
+            <BreadcrumbLink href="/Education">Education</BreadcrumbLink>
           </BreadcrumbItem>
         </Breadcrumb>
         <HStack direction="column">
