@@ -32,7 +32,7 @@ const City = ({ title, content, publishedAt, urlToImage, description }) => {
           <div
             onClick={newpage}
             className="card mb-3 ml-4"
-            style={{ maxWidth: "640px", justifyContent: "center" }}
+            style={{ maxWidth: "640px",marginLeft:"20px", justifyContent: "center" }}
           >
             <div className="row g-0">
               <div className="col-md-4">

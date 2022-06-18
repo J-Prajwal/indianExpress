@@ -3,7 +3,7 @@ import styled from './Crousel.module.css'
 
 export const Crousel = () => {
   return (
-    <div>
+    <div className={styled.main}>
 
 
 <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
