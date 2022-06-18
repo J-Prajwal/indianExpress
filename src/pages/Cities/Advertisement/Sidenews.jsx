@@ -15,14 +15,14 @@ const Sidenews = ({ title, content, publishedAt, urlToImage, description }) => {
   useEffect(() => {
     axios
       .get(
-        `https://newsapi.org/v2/top-headlines?country=in&apiKey=c9146378e4af465bacf36a65828ba9f0`
+        `https://newsapi.org/v2/top-headlines?country=in&category=health&apiKey=c9146378e4af465bacf36a65828ba9f0`
       )
       .then((res) => setSideData(res.data.articles))
       .catch((e) => console.log(e));
   }, []);
 
   const newpage = () => {
-    navigate("./NewPage.jsx");
+    navigate("./NewPage.jsx")
     localStorage.setItem("new", JSON.stringify(localdata));
   };
   return (
@@ -34,7 +34,7 @@ const Sidenews = ({ title, content, publishedAt, urlToImage, description }) => {
             className="card mb-3 ml-4"
             style={{ maxWidth: "340px", justifyContent: "center" }}
           >
-                      <div class="card-header">
+                      <div class="card-header text-info">Featured</div>
             <div className="row g-0">
               <div className="col-md-4">
                 <img
@@ -55,7 +55,7 @@ const Sidenews = ({ title, content, publishedAt, urlToImage, description }) => {
               </div>
             </div>
           </div>
-          </div>
+//           </div>
         );
       })}
     </div>
