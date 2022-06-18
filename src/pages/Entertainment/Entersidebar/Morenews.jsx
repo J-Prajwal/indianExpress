@@ -8,7 +8,7 @@ const Morenews = () => {
   useEffect(() => {
    
     axios
-    .get(`https://newsapi.org/v2/everything?q=Tollywood&from=2022-05-17&apiKey=cc3256391f47466b93db6bbd192db4a4`)
+    .get(`https://newsapi.org/v2/everything?q=entertainment&from=2022-05-18&sortBy=publishedAt&apiKey=58aa853356384f19a88049b3ce553605`)
     .then(({data})=>{
       setMoreenter(data.articles)
     })
@@ -22,7 +22,7 @@ const Morenews = () => {
 
   return (
     <div>
-        <h3>Best Of Express</h3>
+        <h3 style={{fontSize:'larger'}}>Best Of Express</h3>
         <div>
            {Moreenter.map((data)=>(
             

@@ -1,15 +1,16 @@
 .mainarticles{
     display: flex;
-    gap: 10px;
+    gap: 5px;
     margin-top: 15px;
 }
 
 .para{
    
     width: 400px;
-    margin-top: 3px;
+  
     color: #444;
     font-size: 14px;
+   
    
 }
 

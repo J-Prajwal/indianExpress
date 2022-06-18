@@ -16,7 +16,7 @@ const [Enterapi, setEnterapi] = useState([])
 useEffect(() => {
 
 axios
-.get(`https://newsapi.org/v2/everything?q=${headline}&from=2022-05-17&apiKey=cc3256391f47466b93db6bbd192db4a4`)
+.get(`https://newsapi.org/v2/everything?q=${headline}&from=2022-05-18&sortBy=publishedAt&apiKey=58aa853356384f19a88049b3ce553605`)
 .then(({data})=>{
     setEnterapi(data.articles)
     
