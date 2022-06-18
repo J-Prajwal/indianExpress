@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import styles from "../Home/Home.module.css";
 import Carousel from "react-bootstrap/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Heading, Select } from "@chakra-ui/react";
 
 const Home = () => {
   const [index, setIndex] = useState(0);
@@ -12,6 +13,25 @@ const Home = () => {
 
   const [topNews, setTopNews] = useState([]);
   const [latestNews, setLatestNews] = useState([]);
+  const [countryNews, setCountryNews] = useState([]);
+  const [countryName, setCountryName] = useState("");
+
+  const handleOnChange = (e) => {
+    setCountryName(e.target.value);
+    console.log(countryName);
+  };
+  useEffect(() => {
+    axios
+      .get(
+        // `https://newsapi.org/v2/top-headlines?country=${countryName}&apiKey=b6f591e710ed4d32a7e03e9844f731ea`
+        "https://newsapi.org/v2/top-headlines?country=in&apiKey=b6f591e710ed4d32a7e03e9844f731ea"
+      )
+      .then((r) => {
+        setCountryNews(r.data.articles);
+      });
+
+    console.log(countryNews);
+  }, [ ,countryName]);
 
   let i = 0;
   useEffect(() => {
@@ -47,10 +67,10 @@ const Home = () => {
         </div>
         <div>
           <div>
-            <h2 style={{ fontSize: "27px" }}>
+            <Heading style={{ fontSize: "27px" }}>
               Exclusive: I-T flagged ‘misreporting’ of Rs 1.06-cr, black money
               SIT judge opted for amnesty scheme
-            </h2>
+            </Heading>
           </div>
           <p>
             Former Supreme Court judge, Justice Arijit Pasayat, Deputy Chairman
@@ -68,7 +88,9 @@ const Home = () => {
         <div style={{ width: "68%" }} className={styles.leftNews}>
           <div className={styles.left}>
             <div style={{ width: "64%" }} className={styles.leftBox}>
-              <h3>Oppn leaders to field a common candidate in Prez polls</h3>
+              <Heading size="lg">
+                Oppn leaders to field a common candidate in Prez polls
+              </Heading>
               <img
                 src="https://images.indianexpress.com/2022/06/mamata-2-2.jpg?w=430"
                 alt=""
@@ -81,13 +103,16 @@ const Home = () => {
             </div>
             <div style={{ width: "33%", borderLeft: "1px solid grey" }}>
               <div className={styles.topNewsStoriesHead}>
-                <h4 className={styles.topNewsStories}>
+                <Heading
+                  style={{ fontSize: "18px" }}
+                  className={styles.topNewsStories}
+                >
                   TOP NEWS STORIES{" "}
                   <i
                     class="fa-solid fa-angle-right"
                     style={{ color: "red" }}
                   ></i>
-                </h4>
+                </Heading>
               </div>
               {topNews.map((news) => {
                 if (i > 4) {
@@ -192,10 +217,10 @@ const Home = () => {
           </div>
           <div className={styles.mainLeft_right}>
             <div style={{ paddingLeft: "5px" }}>
-              <h4>
+              <Heading style={{ fontSize: "18px" }}>
                 LATEST NEWS{" "}
                 <i class="fa-solid fa-angle-right" style={{ color: "red" }}></i>
-              </h4>
+              </Heading>
             </div>
             {latestNews.map((news) => {
               return (
@@ -238,10 +263,10 @@ const Home = () => {
           </Carousel>
           <div className={styles.mainRight_partition}>
             <div style={{ borderBottom: "1px solid grey" }}>
-              <h4>
+              <Heading style={{ fontSize: "20px" }}>
                 EDITORIALS{" "}
                 <i class="fa-solid fa-angle-right" style={{ color: "red" }}></i>
-              </h4>
+              </Heading>
             </div>
             <div style={{ display: "flex", justifyContent: "space-around" }}>
               <div style={{ width: "500%", fontSize: "15px" }}>
@@ -255,8 +280,11 @@ const Home = () => {
             </div>
           </div>
           <div className={styles.mainRight_partition}>
-            <div style={{paddingLeft: "5px"}}>
-              <h5>OPINION</h5>
+            <div style={{ paddingLeft: "5px" }}>
+              <Heading style={{ fontSize: "20px" }}>
+                OPINION{" "}
+                <i class="fa-solid fa-angle-right" style={{ color: "red" }}></i>
+              </Heading>
             </div>
             <div className={styles.flexBox}>
               <div className={styles.opinionImg}>
@@ -323,7 +351,10 @@ const Home = () => {
               </div>
               <div className={styles.opinionData}>
                 <p className={styles.names}>Rakhshanda Jalil</p>
-                <p className={styles.titles}>Scholar and teacher Gopichand Narang believed in Urdu’s ability to build bridges</p>
+                <p className={styles.titles}>
+                  Scholar and teacher Gopichand Narang believed in Urdu’s
+                  ability to build bridges
+                </p>
               </div>
             </div>
             <div className={styles.flexBox}>
@@ -342,6 +373,27 @@ const Home = () => {
         </div>
       </div>
       {/* main section ends here */}
+      <div className={styles.main}>
+        <div
+          className={styles.mainLeft}
+          style={{ boxShadow: "0 0 5px 5px #dfdfdf" }}
+        >
+          <Heading style={{ fontSize: "18px" }}>Country News</Heading>
+          <form>
+            <Select
+              placeholder="Select Country"
+              onChange={(e) => handleOnChange(e)}
+            >
+              <option value="in" selected>
+                India
+              </option>
+              <option value="am">America</option>
+              <option value="rs">Russia</option>
+            </Select>
+          </form>
+        </div>
+        <div className={styles.mainRight}></div>
+      </div>
     </div>
   );
 };
