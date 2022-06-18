@@ -87,12 +87,12 @@ const Sport = () => {
         </Grid>
         <Breadcrumb mb="20px">
           <BreadcrumbItem>
-            <BreadcrumbLink href="#" color="red">
+            <BreadcrumbLink href="/" color="red">
               Home
             </BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbItem>
-            <BreadcrumbLink href="#">Sports</BreadcrumbLink>
+            <BreadcrumbLink href="/Sport">Sports</BreadcrumbLink>
           </BreadcrumbItem>
         </Breadcrumb>
 
