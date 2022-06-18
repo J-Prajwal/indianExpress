@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { v4 as uuidv4 } from 'uuid';
+import City from "./Advertisement/City";
+// import { v4 as uuidv4 } from "uuid";
 import styled from "./Cities.module.css";
+import Addvertise from "./Advertisement/Advertise";
+import Sidenews from "./Advertisement/Sidenews";
 // import { Image } from "@chakra-ui/react";
-// import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 const Cities = () => {
   const [data, setData] = useState([]);
 
@@ -18,7 +20,7 @@ const Cities = () => {
   console.log(data);
 
   return (
-    <div >
+    <div>
       <div className={styled.add1}>
         <img
           src="https://tpc.googlesyndication.com/daca_images/simgad/17135105900879832363"
@@ -36,35 +38,44 @@ const Cities = () => {
           </marquee>
         </div>
       </div>
-      {data.map((el) => {
-        return (
-          <div className={styled.maindiv}>
-          <div className="card mb-3" style={{ maxWidth: "540px" ,justifyContent:"center"}}>
-            <div className="row g-0">
-              <div className="col-md-4">
-                <img
-                  src={el.urlToImage}
-                  className="img-fluid rounded-start"
-                  alt="..."
-                />
-                <p>{el.author}</p>
-              </div>
-              <div className="col-md-8">
-                <div className="card-body">
-                  <h5 className="card-title">{el.title}</h5>
-                  <p className="card-text">{el.description}</p>
-                  <p className="card-text">
-                    <small className="text-muted">
-                      {el.publishedAt}
-                    </small>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          </div>
-        );
-      })}
+
+      {/* ....... */}
+<div className={styled.maindiv}>
+        <div className={styled.image1}>
+          <img
+            src="https://tpc.googlesyndication.com/simgad/4933651823984287320"
+            width="160px"
+            height="600px"
+            alt=""
+          />
+        </div>
+
+
+      <div className={styled.news}>
+        <City/>
+      </div>
+<div className={styled.Sidenews}>
+
+</div>
+<Sidenews/>
+
+      <div className={styled.add}>
+      <Addvertise/>
+      </div>
+
+
+
+        <div className={styled.image1}>
+          <img
+            src="https://tpc.googlesyndication.com/simgad/4933651823984287320"
+            width="160px"
+            height="600px"
+            alt=""
+          />
+        </div>
+
+
+        </div>
     </div>
   );
 };
