@@ -71,11 +71,7 @@
 .sidenews{
     width:20%
 }
-h5{
-  
-  font-weight: 800;
-  font-size:20px
-}
+
 h5:hover{
   color:red
 }
