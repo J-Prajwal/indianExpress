@@ -18,7 +18,7 @@ const Cities = () => {
   console.log(data);
 
   return (
-    <div key={el.url}>
+    <div >
       <div className={styled.add1}>
         <img
           src="https://tpc.googlesyndication.com/daca_images/simgad/17135105900879832363"
