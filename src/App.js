@@ -10,6 +10,7 @@ import Sport from "./pages/Sport/Sport";
 import Education from "./pages/Education/Education";
 import DetailedNews from "./pages/DetailedNews/DetailedNews";
 
+
 function App() {
   return (
     <div>
@@ -24,7 +25,7 @@ function App() {
         <Route path="/Details" element={<DetailedNews />}></Route>
       </Routes>
       <Footer />
-
+    
     </div>
   );
 }
