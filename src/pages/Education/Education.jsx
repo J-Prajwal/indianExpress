@@ -178,7 +178,7 @@ const Education = () => {
               </Text>
             </Box>
             <Box>
-              <Image src="https://images.indianexpress.com/2022/06/ch1441446-1.jpg?resize=250,175" />
+              <Image src="https://images.indianexpress.com/2022/06/ch1441446-1.jpg?resize=250,150" />
               <Text fontSize="17px">
                 TN board +2, SSLC Result 2022: Date and time announced
               </Text>
@@ -186,29 +186,54 @@ const Education = () => {
           </Box>
         </HStack>
 
+        <HStack>
+          <Box>
+            <Image src="https://images.indianexpress.com/2022/06/gujarat-riots.jpg?resize=450,250" />
+            <Text fontSize="17px">
+              Bandon Mein Tha Dum review: While comprehensive, series falls flat
+              in capturing glory & drama of India’s win
+            </Text>
+          </Box>
+          <Box>
+            <Image src="https://images.indianexpress.com/2022/06/karnataka-textbook-row-1.jpg?resize=450,250" />
+            <Text fontSize="17px">
+              Bandon Mein Tha Dum review: While comprehensive, series falls flat
+              in capturing glory & drama of India’s win
+            </Text>
+          </Box>
+          <Box>
+            <Image src="https://images.indianexpress.com/2022/04/GUJCET.jpg?resize=450,250" />
+            <Text fontSize="17px">
+              Bandon Mein Tha Dum review: While comprehensive, series falls flat
+              in capturing glory & drama of India’s win
+            </Text>
+          </Box>
+        </HStack>
+
         <Box mr={5} mt="20px">
           {data.map((value) => (
             <div key={value.url}>
               <Grid
-                h="190px"
+                h="190"
                 templateRows="repeat(2, 1fr)"
                 templateColumns="repeat(5, 1fr)"
-                gap={1}
+                gap={3}
+                paddingBottom="2px"
                 borderBottom="1px"
-                borderColor='gray.400'
+                borderColor="gray.400"
               >
                 <GridItem rowSpan={1} colSpan={1}>
                   <Image
-                    boxSize="200px"
-                    height="180px"
+                    boxSize="300px"
+                    height="auto"
                     src={value.urlToImage}
                     alt="SportNews"
                   />
                 </GridItem>
-                <GridItem colSpan={4} bg="while" >
+                <GridItem colSpan={4} bg="while">
                   <Heading fontSize="20px">{value.title}</Heading>
                   <Text fontSize="15px">{value.publishedAt}</Text>
-                  <br/>
+                  <br />
                   <Text>{value.description}</Text>
                 </GridItem>
               </Grid>

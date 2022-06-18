@@ -205,6 +205,29 @@ const Sport = () => {
             </Box>
           </Box>
         </HStack>
+        <HStack>
+          <Box>
+            <Image src="https://images.indianexpress.com/2022/06/osaka-1200-10.jpeg?resize=450,250" />
+            <Text fontSize="17px">
+              Bandon Mein Tha Dum review: While comprehensive, series falls flat
+              in capturing glory & drama of India’s win
+            </Text>
+          </Box>
+          <Box>
+            <Image src="https://images.indianexpress.com/2022/06/While-You-Were-Asleep-3-1.jpg?resize=450,250" />
+            <Text fontSize="17px">
+              Bandon Mein Tha Dum review: While comprehensive, series falls flat
+              in capturing glory & drama of India’s win
+            </Text>
+          </Box>
+          <Box>
+            <Image src="https://images.indianexpress.com/2022/06/Nadal-1-3.jpg?resize=450,250" />
+            <Text fontSize="17px">
+              Bandon Mein Tha Dum review: While comprehensive, series falls flat
+              in capturing glory & drama of India’s win
+            </Text>
+          </Box>
+        </HStack>
 
         <Box mr={5} mt="20px">
           {data.map((value) => (
@@ -215,20 +238,20 @@ const Sport = () => {
                 templateColumns="repeat(5, 1fr)"
                 gap={1}
                 borderBottom="1px"
-                borderColor='gray.400'
+                borderColor="gray.400"
               >
                 <GridItem rowSpan={1} colSpan={1}>
                   <Image
-                    boxSize="200px"
-                    height="180px"
+                    boxSize="300px"
+                    height="auto"
                     src={value.urlToImage}
                     alt="SportNews"
                   />
                 </GridItem>
-                <GridItem colSpan={4} bg="while" >
+                <GridItem colSpan={4} bg="while">
                   <Heading fontSize="25px">{value.title}</Heading>
                   <Text fontSize="15">{value.publishedAt}</Text>
-                  <br/>
+                  <br />
                   <Text>{value.description}</Text>
                 </GridItem>
               </Grid>
