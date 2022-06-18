@@ -9,6 +9,7 @@ import Cities from "./pages/Cities/Cities";
 import Sport from "./pages/Sport/Sport";
 import Education from "./pages/Education/Education";
 import DetailedNews from "./pages/DetailedNews/DetailedNews";
+import Login from "./components/Login/Login";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/Cities" element={<Cities />}></Route>
         <Route path="/Sport" element={<Sport />}></Route>
         <Route path="/Details" element={<DetailedNews />}></Route>
+        <Route path="/Login" element={<Login />}></Route>
       </Routes>
       <Footer />
 
