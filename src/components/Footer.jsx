@@ -11,9 +11,14 @@ import {
 import style from "./FOOTER_CSS/Footer.module.css";
 
 const Footer = () => {
+
+ 
+
+
   let d = new Date();
   const FullYear = d.getFullYear();
   // console.log('FullYear:', FullYear)
+
 
   return (
     <div className={style.MainContainerForFooter}>
