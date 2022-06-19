@@ -31,30 +31,36 @@ https://medium.com/@jaisprajwal.1999/masai-school-construct-week-project-3283853
 
 https://drive.google.com/file/d/1-EqGtcDcwr--27eVli17bL42fo1TsvCV/view?usp=sharing
 
-## 🔗 Team Members
+## 🔗 Team Members & Contributions
     1. Prajwal Jaiswal
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/J-Prajwal)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/prajwal-jaiswal-3772aa215/)
+## Contribution: Developed Homepage
     
     2. Suraj Badwaik
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/Suraj-Badwaik)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/suraj-badwaik/)
+## Contribution: Developed Header, Footer and Sign-in
 
     3. Madhuri Patel
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/madhuri7patel)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/madhuri-patel-1230a7201/)
+## Contribution: Developed Homepage
 
     4. Hemant Prajapati
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/hemant069)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hemant-prajapatii/)
+## Contribution: Developed Homepage
 
     5. Manish Singh Chouhan
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/manishchouhan2396)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/manish-singh-chouhan-6b823620b/)
+## Contribution: Developed Homepage
 
     6. Chhatrapal Ahirwar
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/Chhattoo25)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/chhatrapal-ahirwar-12b9aa217/)
+## Contribution: Developed Homepage
 
 ## Feedback
 
