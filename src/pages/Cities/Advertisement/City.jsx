@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-// import styled from "./Cities.module.css";
+import styled from "./city.module.css";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
@@ -26,13 +26,14 @@ const City = ({ title, content, publishedAt, urlToImage, description }) => {
     localStorage.setItem("new",JSON.stringify(localdata));
   };
   return (
-    <div>
+    <div className={styled.citytop}>
+      <hr></hr>
       {data.map((el) => {
         return (
           <div
             onClick={newpage}
             className="card mb-3 ml-4"
-            style={{ maxWidth: "640px", justifyContent: "center" }}
+            style={{ maxWidth: "640px",marginLeft:"20px", marginRight:"10px",justifyContent: "center" }}
           >
             <div className="row g-0">
               <div className="col-md-4">
@@ -45,8 +46,8 @@ const City = ({ title, content, publishedAt, urlToImage, description }) => {
               </div>
               <div className="col-md-8">
                 <div className="card-body">
-                  <h5 className="card-title">{el.title}</h5>
-                  <p className="card-text">{el.description}</p>
+                  <h5 className="card-title ">{el.title}</h5>
+                  <p className="card-text ">{el.description}</p>
                   <p className="card-text">
                     <small className="text-muted">{el.publishedAt}</small>
                   </p>

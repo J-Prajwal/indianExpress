@@ -211,3 +211,30 @@ img {
   border-radius: 50%;
   border: 1px solid grey;
 }
+
+.mainLeft_2 {
+  /* border: 1px solid teal; */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mainNews {
+  /* border: 1px solid red; */
+  display: flex;
+}
+
+.mainNewsBig {
+  /* border: 1px solid black; */
+  width: 70%;
+}
+
+.mainNewsSmall {
+  /* border: 1px solid teal; */
+  width: 30%;
+}
+
+.mainNewsSmall > div {
+  border-bottom:rgba(0, 0, 0, 0.35)
+}

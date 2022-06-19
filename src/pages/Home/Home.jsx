@@ -14,26 +14,31 @@ const Home = () => {
   const [topNews, setTopNews] = useState([]);
   const [latestNews, setLatestNews] = useState([]);
   const [countryNews, setCountryNews] = useState([]);
-  const [countryName, setCountryName] = useState("");
+  const [countryName, setCountryName] = useState("in");
+  const [mainCountryNews, setMainCountryNews] = useState({});
+  const [subCountryNews, setSubCountryNews] = useState([]);
 
   const handleOnChange = (e) => {
     setCountryName(e.target.value);
-    console.log(countryName);
   };
   useEffect(() => {
     axios
       .get(
-        // `https://newsapi.org/v2/top-headlines?country=${countryName}&apiKey=b6f591e710ed4d32a7e03e9844f731ea`
-        "https://newsapi.org/v2/top-headlines?country=in&apiKey=b6f591e710ed4d32a7e03e9844f731ea"
+        `https://newsapi.org/v2/top-headlines?country=${countryName}&apiKey=b6f591e710ed4d32a7e03e9844f731ea`
       )
       .then((r) => {
         setCountryNews(r.data.articles);
-      });
+        let imgUrl = countryNews[7].urlToImage;
+        let newsTitle = countryNews[7].title;
+        let newsContent = countryNews[7].content;
 
-    console.log(countryNews);
-  }, [ ,countryName]);
+        setMainCountryNews({ imgUrl, newsTitle, newsContent });
+      });
+  }, [countryName]);
 
   let i = 0;
+  let j = 2;
+
   useEffect(() => {
     axios
       .get(
@@ -41,8 +46,14 @@ const Home = () => {
       )
       .then((r) => {
         setTopNews(r.data.articles);
+        let imgUrl = countryNews[7].urlToImage;
+        let newsTitle = countryNews[7].title;
+        let newsContent = countryNews[7].content;
+
+        setMainCountryNews({ imgUrl, newsTitle, newsContent });
+        console.log(mainCountryNews);
       })
-      .catch((err) => alert(err));
+      .catch((err) => console.log(err));
   }, []);
 
   useEffect(() => {
@@ -374,23 +385,63 @@ const Home = () => {
       </div>
       {/* main section ends here */}
       <div className={styles.main}>
-        <div
-          className={styles.mainLeft}
-          style={{ boxShadow: "0 0 5px 5px #dfdfdf" }}
-        >
-          <Heading style={{ fontSize: "18px" }}>Country News</Heading>
-          <form>
-            <Select
-              placeholder="Select Country"
-              onChange={(e) => handleOnChange(e)}
-            >
-              <option value="in" selected>
-                India
-              </option>
-              <option value="am">America</option>
-              <option value="rs">Russia</option>
-            </Select>
-          </form>
+        <div style={{ boxShadow: "0 0 5px 5px #dfdfdf", width: "68%" }}>
+          <div className={styles.mainLeft_2}>
+            <div>
+              <Heading style={{ fontSize: "18px" }}>{countryName.toUpperCase()} News</Heading>
+            </div>
+            <div>
+              <form>
+                <Select onChange={(e) => handleOnChange(e)}>
+                  <option value="br">Brazil</option>
+                  <option value="ch">China</option>
+                  <option value="fr">France</option>
+                  <option value="in" selected>
+                    India
+                  </option>
+                  <option value="it">Italy</option>
+                  <option value="jp">Japan</option>
+                  <option value="kr">Korea</option>
+                  <option value="nz">New Zeeland</option>
+                  <option value="rs">Russia</option>
+                  <option value="ae">United Arab Emirates</option>
+                  <option value="us">United States of America</option>
+                </Select>
+              </form>
+            </div>
+          </div>
+          <hr />
+          <div className={styles.mainNews}>
+            <div className={styles.mainNewsBig}>
+              <div>
+                <img src={mainCountryNews.imgUrl} alt="" />
+              </div>
+              <div>
+                <Heading>{mainCountryNews.newsTitle}</Heading>
+              </div>
+              <div>
+                <p>{mainCountryNews.newsContent}</p>
+              </div>
+            </div>
+            <div className={styles.mainNewsSmall}>
+              {countryNews.map(({ urlToImage, title }) => {
+                if (j < 5) {
+                  j++;
+                  return (
+                    <div className={styles.flexBox}>
+                      <div>
+                        <img src={urlToImage} alt="" />
+                        {title}
+                      </div>
+                    </div>
+                  );
+                } else {
+                  j++;
+                  return;
+                }
+              })}
+            </div>
+          </div>
         </div>
         <div className={styles.mainRight}></div>
       </div>
