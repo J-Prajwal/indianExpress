@@ -11,7 +11,12 @@ const City = ({ title, content, publishedAt, urlToImage, description }) => {
     des: description,
   };
   const [data, setData] = useState([]);
+  // const [items, setItems] = useState([]);
   const navigate = useNavigate();
+
+
+  // useEffect(() => {
+  // }, [items]);
 
   useEffect(() => {
     axios
@@ -20,7 +25,9 @@ const City = ({ title, content, publishedAt, urlToImage, description }) => {
       )
       .then((res) => setData(res.data.articles))
       .catch((e) => console.log(e));
-  }, []);
+    localStorage.setItem('items', JSON.stringify(data));
+
+  }, [data]);
   const newpage = () => {
     navigate("./NewPage.jsx");
     localStorage.setItem("new",JSON.stringify(localdata));
@@ -28,9 +35,9 @@ const City = ({ title, content, publishedAt, urlToImage, description }) => {
   return (
     <div className={styled.citytop}>
       <hr></hr>
-      {data.map((el) => {
+      {data.map((el,index) => {
         return (
-          <div
+          <div key={index}
             onClick={newpage}
             className="card mb-3 ml-4"
             style={{ maxWidth: "640px",marginLeft:"20px", marginRight:"10px",justifyContent: "center" }}

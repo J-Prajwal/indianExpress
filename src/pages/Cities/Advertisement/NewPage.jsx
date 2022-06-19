@@ -3,7 +3,14 @@ import City from './City';
 
 const NewPage = () => {
 let fullNews = JSON.parse(localStorage.getItem("new"))
+const [items, setItems] = useState([]);
 
+useEffect(() => {
+  const items = JSON.parse(localStorage.getItem('items'));
+  if (items) {
+   setItems((items));
+  }
+}, []);
 
 const [detail, setDetail] = useState([]);
 useEffect(() => {
@@ -18,8 +25,8 @@ useEffect(() => {
 }, []);
   return (
     <div>
-  {detail.map((data) => (
-        <City key={data.id} {...data} />
+  {items.map((data) => (
+        <img src={data.urlToImage} />
       ))}
     </div>
   )

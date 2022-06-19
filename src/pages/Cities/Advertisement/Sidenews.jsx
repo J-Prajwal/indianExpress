@@ -22,14 +22,14 @@ const Sidenews = ({ title, content, publishedAt, urlToImage, description }) => {
   }, []);
 
   const newpage = () => {
-    navigate("./NewPage.jsx")
-    localStorage.setItem("new", JSON.stringify(localdata));
+    navigate(".Cities/NewPage.jsx")
+    // localStorage.setItem("new", JSON.stringify(localdata));
   };
   return (
     <div style={{marginTop:"10px"}}>
-      {sidedata.map((el) => {
+      {sidedata.map((el,index) => {
         return (
-          <div
+          <div key={index}
             onClick={newpage}
             className="card mb-3 ml-4"
             style={{ maxWidth: "340px", justifyContent: "center" }}
