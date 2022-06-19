@@ -39,32 +39,66 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Masai School Construct Week Project
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Welcome, we're are team “Indian Express”, and this Readme contains details about our project. We‘ve built a cloned website of Indian Express with some of its basic functionalities. This overall project was a part of our construct week at Masai School.
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+## About Project
+At a time when India was struggling for her freedom, oppression was rife and the press virtually gagged, one voice dared to break the silence. Founded by Shri Ramnath Goenka in 1932, The Indian Express gave India a voice of opinion that was fearless and true.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<b> And we cloned it for our construct week Project. </b>
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Features
 
-### Advanced Configuration
+- Sign-up & Log-In
+- Otp Verification
+- Multiple News pages with filter
+- Header and Footer with routing functionality
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+## Deployment Link
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+https://indianexpressclone.netlify.app/
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Blog Link
+
+https://medium.com/@jaisprajwal.1999/masai-school-construct-week-project-3283853a3fe6
+
+## Presentation Video Link
+
+https://drive.google.com/file/d/1-EqGtcDcwr--27eVli17bL42fo1TsvCV/view?usp=sharing
+
+## 🔗 Team Members
+    1. Prajwal Jaiswal
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/J-Prajwal)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/prajwal-jaiswal-3772aa215/)
+    
+    2. Suraj Badwaik
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/Suraj-Badwaik)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/suraj-badwaik/)
+
+    3. Madhuri Patel
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/madhuri7patel)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/madhuri-patel-1230a7201/)
+
+    4. Hemant Prajapati
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/hemant069)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hemant-prajapatii/)
+
+    5. Manish Singh Chouhan
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/manishchouhan2396)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/manish-singh-chouhan-6b823620b/)
+
+    6. Chhatrapal Ahirwar
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/Chhattoo25)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/chhatrapal-ahirwar-12b9aa217/)
+
+## Feedback
+
+If you have any feedback, please reach out to us at jaisprajwal.1999@gmail.com OR shubhamrakhonde507@gmail.com
+
