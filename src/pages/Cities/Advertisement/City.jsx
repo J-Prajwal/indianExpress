@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import styled from "./city.module.css";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { useContext } from "react";
+import { NewsContext } from "../NewsContext";
 
 const City = ({ title, content, publishedAt, urlToImage, description }) => {
   let localdata = {
@@ -11,7 +13,8 @@ const City = ({ title, content, publishedAt, urlToImage, description }) => {
     des: description,
   };
   const [data, setData] = useState([]);
-  // const [items, setItems] = useState([]);
+ 
+  const {singlepage, setSinglePage}= useContext(NewsContext)
   const navigate = useNavigate();
 
 
@@ -21,16 +24,18 @@ const City = ({ title, content, publishedAt, urlToImage, description }) => {
   useEffect(() => {
     axios
       .get(
-        `https://newsapi.org/v2/top-headlines?country=in&apiKey=c9146378e4af465bacf36a65828ba9f0`
+        `https://newsapi.org/v2/top-headlines?country=in&apiKey=b6f591e710ed4d32a7e03e9844f731ea`
       )
       .then((res) => setData(res.data.articles))
       .catch((e) => console.log(e));
-    localStorage.setItem('items', JSON.stringify(data));
+  
 
   }, [data]);
-  const newpage = () => {
-    navigate("./NewPage.jsx");
-    localStorage.setItem("new",JSON.stringify(localdata));
+  const newpage = (el) => {
+    navigate("./NewPage");
+    setSinglePage(el)
+// console.log(el)
+    // localStorage.setItem("new",JSON.stringify(localdata));
   };
   return (
     <div className={styled.citytop}>
@@ -38,7 +43,7 @@ const City = ({ title, content, publishedAt, urlToImage, description }) => {
       {data.map((el,index) => {
         return (
           <div key={index}
-            onClick={newpage}
+            onClick={()=>newpage(el)}
             className="card mb-3 ml-4"
             style={{ maxWidth: "640px",marginLeft:"20px", marginRight:"10px",justifyContent: "center" }}
           >

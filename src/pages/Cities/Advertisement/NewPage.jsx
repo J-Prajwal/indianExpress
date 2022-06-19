@@ -1,34 +1,23 @@
 import React from 'react'
-import City from './City';
+import { useContext } from 'react'
+import { NewsContext } from '../NewsContext'
 
 const NewPage = () => {
-let fullNews = JSON.parse(localStorage.getItem("new"))
-const [items, setItems] = useState([]);
 
-useEffect(() => {
-  const items = JSON.parse(localStorage.getItem('items'));
-  if (items) {
-   setItems((items));
-  }
-}, []);
-
-const [detail, setDetail] = useState([]);
-useEffect(() => {
-  axios
-    .get(
-      `https://newsapi.org/v2/top-headlines?q=${fullNews}&country=in&apiKey=c9146378e4af465bacf36a65828ba9f0`
-    )
-    
-    .then(({ data }) => {
-      setDetail(data.articles);
-    });
-}, []);
+  const{singlepage}= useContext(NewsContext)
+  console.log(singlepage)
   return (
-    <div>
-  {items.map((data) => (
-        <img src={data.urlToImage} />
-      ))}
+    <>
+    <div class="card mb-3" style={{marginTop:"12px"}}>
+    <img src={singlepage.urlToImage} class="card-img-top" alt="..." style={{width:"90%" ,margin:"auto"}} />
+    <div class="card-body" style={{margin:"auto"}}>
+      <h5 class="card-title">{singlepage.title}</h5>
+      <p class="card-text">{singlepage.description}</p>
+      <p class="card-text"><small class="text-muted">{singlepage.publishedAt}</small></p>
     </div>
+  </div>
+ 
+  </>
   )
 }
 
