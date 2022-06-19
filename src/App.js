@@ -9,6 +9,7 @@ import Sport from "./pages/Sport/Sport";
 import Education from "./pages/Education/Education";
 import DetailedNews from "./pages/DetailedNews/DetailedNews";
 import Login from "./components/Login/Login";
+import NewPage from "./pages/Cities/Advertisement/NewPage";
 
 
 function App() {
@@ -23,6 +24,8 @@ function App() {
         <Route path="/Sport" element={<Sport />}></Route>
         <Route path="/Details" element={<DetailedNews />}></Route>
         <Route path="/Login" element={<Login />}></Route>
+        <Route path="/Cities/NewPage" element={<NewPage />}></Route>
+        
       </Routes>
       <Footer />
     </div>

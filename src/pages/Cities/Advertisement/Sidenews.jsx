@@ -15,21 +15,21 @@ const Sidenews = ({ title, content, publishedAt, urlToImage, description }) => {
   useEffect(() => {
     axios
       .get(
-        `https://newsapi.org/v2/top-headlines?country=in&category=health&apiKey=c9146378e4af465bacf36a65828ba9f0`
+        `https://newsapi.org/v2/top-headlines?country=in&category=health&apiKey=b6f591e710ed4d32a7e03e9844f731ea`
       )
       .then((res) => setSideData(res.data.articles))
       .catch((e) => console.log(e));
   }, []);
 
   const newpage = () => {
-    navigate("./NewPage.jsx")
-    localStorage.setItem("new", JSON.stringify(localdata));
+    navigate(".Cities/NewPage.jsx")
+    // localStorage.setItem("new", JSON.stringify(localdata));
   };
   return (
     <div style={{marginTop:"10px"}}>
-      {sidedata.map((el) => {
+      {sidedata.map((el,index) => {
         return (
-          <div
+          <div key={index}
             onClick={newpage}
             className="card mb-3 ml-4"
             style={{ maxWidth: "340px", justifyContent: "center" }}
