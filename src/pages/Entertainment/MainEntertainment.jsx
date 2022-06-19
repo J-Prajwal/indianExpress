@@ -15,7 +15,7 @@ const MainEntertainment = () => {
         <Headline/>
       <div style={{display:'flex' ,justifyContent:'space-between'}}>
 
-      <div style={{display:"flex", justifyContent: "space-between"}}>
+      
 
     <div>
        <Entertainment/>
