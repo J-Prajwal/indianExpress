@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import styled from "./city.module.css";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { useContext } from "react";
+import { NewsContext } from "../NewsContext";
 
 const City = ({ title, content, publishedAt, urlToImage, description }) => {
   let localdata = {
@@ -11,7 +13,10 @@ const City = ({ title, content, publishedAt, urlToImage, description }) => {
     des: description,
   };
   const [data, setData] = useState([]);
+ 
+  const {singlepage, setSinglePage}= useContext(NewsContext)
   const navigate = useNavigate();
+
 
   useEffect(() => {
     axios
@@ -20,18 +25,22 @@ const City = ({ title, content, publishedAt, urlToImage, description }) => {
       )
       .then((res) => setData(res.data.articles))
       .catch((e) => console.log(e));
-  }, []);
-  const newpage = () => {
-    navigate("./NewPage.jsx");
-    localStorage.setItem("new",JSON.stringify(localdata));
+  
+
+  }, [data]);
+  const newpage = (el) => {
+    navigate("./NewPage");
+    setSinglePage(el)
+// console.log(el)
+    // localStorage.setItem("new",JSON.stringify(localdata));
   };
   return (
     <div className={styled.citytop}>
       <hr></hr>
-      {data.map((el) => {
+      {data.map((el,index) => {
         return (
-          <div
-            onClick={newpage}
+          <div key={index}
+            onClick={()=>newpage(el)}
             className="card mb-3 ml-4"
             style={{ maxWidth: "640px",marginLeft:"20px", marginRight:"10px",justifyContent: "center" }}
           >

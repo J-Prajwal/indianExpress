@@ -26,7 +26,7 @@ const Home = () => {
   useEffect(() => {
     axios
       .get(
-        `https://newsapi.org/v2/top-headlines?country=${countryName}&apiKey=b6f591e710ed4d32a7e03e9844f731ea`
+        `https://newsapi.org/v2/top-headlines?country=${countryName}&apiKey=34c7de93f7594b079eec28988567d583`
       )
       .then((r) => {
         setCountryNews(r.data.articles);
@@ -45,7 +45,7 @@ const Home = () => {
     document.title = "Latest News, India News, Breaking News, Today's News Headlines Online, English News Top Stories, Coronavirus News, IPL 2022 Updates|The Indian Express";
     axios
       .get(
-        "https://newsapi.org/v2/top-headlines?country=in&apiKey=b6f591e710ed4d32a7e03e9844f731ea"
+        "https://newsapi.org/v2/top-headlines?country=in&apiKey=34c7de93f7594b079eec28988567d583"
       )
       .then((r) => {
         setTopNews(r.data.articles);
