@@ -15,7 +15,7 @@ const Sidenews = ({ title, content, publishedAt, urlToImage, description }) => {
   useEffect(() => {
     axios
       .get(
-        `https://newsapi.org/v2/top-headlines?country=in&category=health&apiKey=b6f591e710ed4d32a7e03e9844f731ea`
+        `https://newsapi.org/v2/top-headlines?country=in&category=health&apiKey=34c7de93f7594b079eec28988567d583`
       )
       .then((res) => setSideData(res.data.articles))
       .catch((e) => console.log(e));
