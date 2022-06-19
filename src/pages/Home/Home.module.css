@@ -211,3 +211,15 @@ img {
   border-radius: 50%;
   border: 1px solid grey;
 }
+
+.mainLeft_2 {
+  /* border: 1px solid teal; */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mainNews {
+  border: 1px solid red;
+}
