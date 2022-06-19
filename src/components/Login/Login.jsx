@@ -17,7 +17,7 @@ import { ArrowBackIcon } from "@chakra-ui/icons";
 
 const getData = () => {
   const data = JSON.parse(localStorage.getItem("userInfoCreds"));
-
+  
   if (data) {
     // console.log("data", data);
     return data;
@@ -27,6 +27,9 @@ const getData = () => {
 };
 
 const Login = () => {
+  useEffect(() => {
+    document.title = "Login Page: Latest News, India News, Breaking News, Today's News Headlines Online, English News Top Stories, Coronavirus News, IPL 2022 Updates|The Indian Express";
+  }, [])
   const navigate = useNavigate();
   const [submit, setSubmit] = useState(getData());
   const [login, setLogin] = useState([]);

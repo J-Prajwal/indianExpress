@@ -18,13 +18,10 @@ const City = ({ title, content, publishedAt, urlToImage, description }) => {
   const navigate = useNavigate();
 
 
-  // useEffect(() => {
-  // }, [items]);
-
   useEffect(() => {
     axios
       .get(
-        `https://newsapi.org/v2/top-headlines?country=in&apiKey=34c7de93f7594b079eec28988567d583`
+        "https://newsapi.org/v2/top-headlines?country=in&apiKey=b6f591e710ed4d32a7e03e9844f731ea"
       )
       .then((res) => setData(res.data.articles))
       .catch((e) => console.log(e));
