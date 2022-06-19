@@ -7,7 +7,8 @@
                      text-align: center;
                  }
                  .aero{
-                     margin-left: 18px;
+                     margin-left: 10px;
+                     margin-right:10px;
                  }
                  .meta{
                      background-color: #fff;
@@ -31,7 +32,7 @@
                      width:270px;
                      margin: auto;
                      margin-top: 15px;
-                     height: 230px;
+                     height: 23px;
                  }
                  .ab{
                      width:180px;

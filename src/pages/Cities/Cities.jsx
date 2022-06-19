@@ -21,7 +21,7 @@ const Cities = () => {
   // // console.log(data);
 
   return (
-    <>
+    <div >
       <div className={styled.add1}>
         <img
           src="https://tpc.googlesyndication.com/daca_images/simgad/17135105900879832363"
@@ -53,12 +53,15 @@ const Cities = () => {
           />
         </div>
   {/* ADD1 */}
+  
 
-
+{/* <div>
+</div> */}
 
 {/* City Page */}
       <div className={styled.news}>
-        <Crousel/>
+<Crousel/>
+       
         <City/>
       </div>
 {/* City Page */}
@@ -93,7 +96,7 @@ const Cities = () => {
 
         </div>
 
-    </>
+    </div>
   );
 };
 
