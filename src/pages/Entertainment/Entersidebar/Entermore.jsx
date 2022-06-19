@@ -8,7 +8,7 @@ const Entermore = () => {
   useEffect(() => {
    
     axios
-    .get(`https://newsapi.org/v2/everything?q=entertainment&from=2022-05-18&sortBy=publishedAt&apiKey=58aa853356384f19a88049b3ce553605`)
+    .get(`https://newsapi.org/v2/everything?q=entertainment&from=2022-05-19&sortBy=publishedAt&apiKey=f67d94ae57ff483f87a5152f802d30da`)
     .then(({data})=>{
       setMoreenter(data.articles)
     })
