@@ -221,5 +221,20 @@ img {
 }
 
 .mainNews {
-  border: 1px solid red;
+  /* border: 1px solid red; */
+  display: flex;
+}
+
+.mainNewsBig {
+  /* border: 1px solid black; */
+  width: 70%;
+}
+
+.mainNewsSmall {
+  /* border: 1px solid teal; */
+  width: 30%;
+}
+
+.mainNewsSmall > div {
+  border-bottom:rgba(0, 0, 0, 0.35)
 }

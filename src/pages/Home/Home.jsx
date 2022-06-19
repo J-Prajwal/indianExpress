@@ -15,6 +15,8 @@ const Home = () => {
   const [latestNews, setLatestNews] = useState([]);
   const [countryNews, setCountryNews] = useState([]);
   const [countryName, setCountryName] = useState("in");
+  const [mainCountryNews, setMainCountryNews] = useState({});
+  const [subCountryNews, setSubCountryNews] = useState([]);
 
   const handleOnChange = (e) => {
     setCountryName(e.target.value);
@@ -26,10 +28,17 @@ const Home = () => {
       )
       .then((r) => {
         setCountryNews(r.data.articles);
+        let imgUrl = countryNews[7].urlToImage;
+        let newsTitle = countryNews[7].title;
+        let newsContent = countryNews[7].content;
+
+        setMainCountryNews({ imgUrl, newsTitle, newsContent });
       });
   }, [countryName]);
 
   let i = 0;
+  let j = 2;
+
   useEffect(() => {
     axios
       .get(
@@ -37,8 +46,14 @@ const Home = () => {
       )
       .then((r) => {
         setTopNews(r.data.articles);
+        let imgUrl = countryNews[7].urlToImage;
+        let newsTitle = countryNews[7].title;
+        let newsContent = countryNews[7].content;
+
+        setMainCountryNews({ imgUrl, newsTitle, newsContent });
+        console.log(mainCountryNews);
       })
-      .catch((err) => alert(err));
+      .catch((err) => console.log(err));
   }, []);
 
   // useEffect(() => {
@@ -50,16 +65,6 @@ const Home = () => {
   //       setLatestNews(r.data.results);
   //     });
   // }, []);
-
-  let j = 0;
-  const [mainNewsData, setMainNewsData] = useState({});
-  countryNews.map((news) => {
-    if (j != 0) {
-      return;
-    }
-    setMainNewsData(news);
-    j++;
-  });
 
   return (
     <div>
@@ -383,7 +388,7 @@ const Home = () => {
         <div style={{ boxShadow: "0 0 5px 5px #dfdfdf", width: "68%" }}>
           <div className={styles.mainLeft_2}>
             <div>
-              <Heading style={{ fontSize: "18px" }}>{countryName} News</Heading>
+              <Heading style={{ fontSize: "18px" }}>{countryName.toUpperCase()} News</Heading>
             </div>
             <div>
               <form>
@@ -409,16 +414,33 @@ const Home = () => {
           <div className={styles.mainNews}>
             <div className={styles.mainNewsBig}>
               <div>
-                <img src="" alt="" />
+                <img src={mainCountryNews.imgUrl} alt="" />
               </div>
               <div>
-                <Heading></Heading>
+                <Heading>{mainCountryNews.newsTitle}</Heading>
               </div>
               <div>
-                <p></p>
+                <p>{mainCountryNews.newsContent}</p>
               </div>
             </div>
-            <div className={styles.mainNewsSmall}></div>
+            <div className={styles.mainNewsSmall}>
+              {countryNews.map(({ urlToImage, title }) => {
+                if (j < 5) {
+                  j++;
+                  return (
+                    <div className={styles.flexBox}>
+                      <div>
+                        <img src={urlToImage} alt="" />
+                        {title}
+                      </div>
+                    </div>
+                  );
+                } else {
+                  j++;
+                  return;
+                }
+              })}
+            </div>
           </div>
         </div>
         <div className={styles.mainRight}></div>
