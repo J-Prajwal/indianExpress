@@ -16,7 +16,7 @@ const City = ({ title, content, publishedAt, urlToImage, description }) => {
   useEffect(() => {
     axios
       .get(
-        `https://newsapi.org/v2/top-headlines?country=in&apiKey=c9146378e4af465bacf36a65828ba9f0`
+        "https://newsapi.org/v2/top-headlines?country=in&apiKey=b6f591e710ed4d32a7e03e9844f731ea"
       )
       .then((res) => setData(res.data.articles))
       .catch((e) => console.log(e));

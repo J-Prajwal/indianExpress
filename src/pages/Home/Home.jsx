@@ -5,7 +5,9 @@ import Carousel from "react-bootstrap/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Heading, Select } from "@chakra-ui/react";
 
+
 const Home = () => {
+  
   const [index, setIndex] = useState(0);
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
@@ -40,6 +42,7 @@ const Home = () => {
   let j = 2;
 
   useEffect(() => {
+    document.title = "Latest News, India News, Breaking News, Today's News Headlines Online, English News Top Stories, Coronavirus News, IPL 2022 Updates|The Indian Express";
     axios
       .get(
         "https://newsapi.org/v2/top-headlines?country=in&apiKey=b6f591e710ed4d32a7e03e9844f731ea"

@@ -8,17 +8,20 @@ import Sidenews from "./Advertisement/Sidenews";
 import { Crousel } from "./Crousel";
 // import { Image } from "@chakra-ui/react";
 const Cities = () => {
+  useEffect(() => {
+    document.title = "City News: Latest News, India News, Breaking News, Today's News Headlines Online, English News Top Stories, Coronavirus News, IPL 2022 Updates|The Indian Express";
+  }, [])
   // const [data, setData] = useState([]);
 
   // useEffect(() => {
   //   axios
   //     .get(
-  //       `https://newsapi.org/v2/top-headlines?country=in&apiKey=c9146378e4af465bacf36a65828ba9f0`
+  //       "https://newsapi.org/v2/top-headlines?country=in&apiKey=b6f591e710ed4d32a7e03e9844f731ea"
   //     )
   //     .then((res) => setData(res.data.articles))
   //     .catch((e) => console.log(e));
   // }, []);
-  // // console.log(data);
+  // console.log(data);
 
   return (
     <div >

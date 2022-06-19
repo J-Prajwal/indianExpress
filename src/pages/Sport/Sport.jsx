@@ -24,6 +24,7 @@ const Sport = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
+    document.title = "Sports News: Latest News, India News, Breaking News, Today's News Headlines Online, English News Top Stories, Coronavirus News, IPL 2022 Updates|The Indian Express";
     axios
       .get(
         `https://newsapi.org/v2/top-headlines?country=in&category=sports&apiKey=07ee45696e7b4c7dae7bc94ac0c4ddd6`
