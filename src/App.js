@@ -10,6 +10,7 @@ import Education from "./pages/Education/Education";
 import DetailedNews from "./pages/DetailedNews/DetailedNews";
 import Login from "./components/Login/Login";
 
+
 function App() {
   return (
     <div>
