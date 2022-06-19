@@ -56,15 +56,15 @@ const Home = () => {
       .catch((err) => console.log(err));
   }, []);
 
-  // useEffect(() => {
-  //   axios
-  //     .get(
-  //       "https://newsdata.io/api/1/news?apikey=pub_8388f9e9492da67b017e34d4bdd4eca23d1b&country=in&language=en&category=top"
-  //     )
-  //     .then((r) => {
-  //       setLatestNews(r.data.results);
-  //     });
-  // }, []);
+  useEffect(() => {
+    axios
+      .get(
+        "https://newsdata.io/api/1/news?apikey=pub_8388f9e9492da67b017e34d4bdd4eca23d1b&country=in&language=en&category=top"
+      )
+      .then((r) => {
+        setLatestNews(r.data.results);
+      });
+  }, []);
 
   return (
     <div>
