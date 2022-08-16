@@ -9,6 +9,14 @@ At a time when India was struggling for her freedom, oppression was rife and the
 
 <b> And we cloned it for our construct week Project. </b>
 
+<h2>Here are some screen-shots from our website</h2>
+
+<img src="https://i.postimg.cc/HsV4S2dc/Screenshot-9.png"/>
+
+<img src= "https://i.postimg.cc/ZnkBVrc3/Screenshot-10.png"/>
+
+
+
 
 ## Features
 
@@ -22,10 +30,6 @@ At a time when India was struggling for her freedom, oppression was rife and the
 
 https://indianexpressclone.netlify.app/
 
-
-## Blog Link
-
-https://medium.com/@jaisprajwal.1999/masai-school-construct-week-project-3283853a3fe6
 
 ## Presentation Video Link
 
