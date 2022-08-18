@@ -11,9 +11,9 @@ At a time when India was struggling for her freedom, oppression was rife and the
 
 <h2>Here are some screen-shots from our website</h2>
 
-<img src="https://i.postimg.cc/HsV4S2dc/Screenshot-9.png"/>
+<img src="https://im5.ezgif.com/tmp/ezgif-5-1a593e1c5b.png"/>
 
-<img src= "https://i.postimg.cc/ZnkBVrc3/Screenshot-10.png"/>
+<img src= "https://im5.ezgif.com/tmp/ezgif-5-192268921a.png"/>
 
 
 
@@ -24,6 +24,8 @@ At a time when India was struggling for her freedom, oppression was rife and the
 - Otp Verification
 - Multiple News pages with filter
 - Header and Footer with routing functionality
+
+<img src = "https://im5.ezgif.com/tmp/ezgif-5-38c97c294b.png" />
 
 
 ## Deployment Link
